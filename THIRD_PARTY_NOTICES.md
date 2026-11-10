@@ -8,5 +8,6 @@ respective components.
 
 Keep acquired sources in the ignored `external_models/` directory or a separate
 local tree. OLinear uses a [separately supplied source tree](docs/OLINEAR_SOURCE_STATUS.md).
-Any license adopted for the HOVER implementation will apply to author-owned
-code. See [license notes](docs/LICENSE_REVIEW.md) for the current status.
+The [MIT License](LICENSE) applies to author-owned HOVER source code. It does
+not relicense third-party backbone sources, datasets, or other material subject
+to independent rights. See [license scope](docs/LICENSE_REVIEW.md).
