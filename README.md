@@ -110,7 +110,8 @@ For the CPU regression suite, register NLinear and FITS first, then run
 
 ## Citation and licensing
 
-Cite the HOVER paper and the original papers for any backbones you use. The
-final HOVER citation and code license are pending author approval. The
-[third-party notices](THIRD_PARTY_NOTICES.md) and
-[license notes](docs/LICENSE_REVIEW.md) describe the applicable boundaries.
+**Citation requested for academic and commercial use.** If you use or adapt HOVER in an academic publication, please cite the HOVER paper once its bibliographic details are available, or include the project URL: https://github.com/GanTian1203/HOVER. For commercial use, we similarly request an acknowledgment of HOVER with the paper citation or this repository link in product documentation, technical reports, or other appropriate accompanying materials.
+
+Until the paper's final citation is available, cite this software using [CITATION.cff](CITATION.cff) or provide the repository URL. The paper citation and repository-link request expresses scholarly attribution expectations; **it is not an additional legal requirement of the MIT License**.
+
+The author-owned HOVER source code is provided under the [MIT License](LICENSE), Copyright (c) 2026 GanTian1203. When distributing copies or substantial portions, retain the copyright and permission notice required by MIT. Third-party backbone source code is not distributed here and remains subject to its original terms. See the [third-party notices](THIRD_PARTY_NOTICES.md) and [license scope](docs/LICENSE_REVIEW.md).
