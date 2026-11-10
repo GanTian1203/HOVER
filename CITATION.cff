@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use HOVER in academic or commercial work, please cite the HOVER paper when available, or link to https://github.com/GanTian1203/HOVER."
+type: software
+title: "HOVER: History- and Output-Conditioned Variable-Shared Error Refinement for Frozen Time-Series Forecasters"
+authors:
+  - name: "GanTian1203"
+repository-code: "https://github.com/GanTian1203/HOVER"
+url: "https://github.com/GanTian1203/HOVER"
+license: MIT
