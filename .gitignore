@@ -1,47 +1,37 @@
-# Python
+# Data, model weights, outputs and personal environments
+data/
+datasets/
+checkpoints/
+outputs/
+runs/
+logs/
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.npy
+*.sqlite
+*.sqlite-*
+*.log
 __pycache__/
 *.py[cod]
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.coverage
-htmlcov/
-*.egg-info/
-build/
-dist/
-
-# Environments and local configuration
 .venv/
 venv/
-env/
-.conda/
 .env
 .env.*
 !.env.example
-*.local
-
-# Editor and operating system
+.ipynb_checkpoints/
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
-
-# Large data, model weights, and temporary outputs
-/data/*
-!/data/README.md
-/checkpoints/
-/weights/
-/runs/
-/logs/
-/tmp/
-*.ckpt
-*.pth
-*.pt
-*.safetensors
-*.npz
-
-# Secrets and credentials
-*.pem
-*.key
-*credentials*.json
-*token*.txt
+external_models/
+*.egg-info/
+build/
+dist/
+CPU_conformance_report.json
+# Author-only release-review history; the public ZIP omits these as well.
+docs/PHASE*_REPORT_ZH.md
+docs/NEXT_STEPS_ZH.md
+docs/AI_USE_DRAFT.md
+manifests/phase2_verification.json
