@@ -1,0 +1,43 @@
+{
+  "version": "FIGURE1D_P3_NLINEAR_PAIRED_V1",
+  "role": "DEV",
+  "history": 336,
+  "horizon": 96,
+  "seeds": [
+    951,
+    952,
+    953,
+    954,
+    955
+  ],
+  "datasets": [
+    "ECL",
+    "Solar",
+    "PEMS03"
+  ],
+  "backbone": "NLINEAR_PAIRED",
+  "backbone_identity": "P3_NLINEAR_PAIRED_ONLY_NOT_STRONG",
+  "systems": [
+    "Frozen P3 NLinear",
+    "P3 NLinear+HOVER"
+  ],
+  "metric": "MSE",
+  "data_file": "results/figure1d/Figure1d_P3_NLinear_5seed_summary.csv",
+  "seed_file": "results/figure1d/Figure1d_P3_NLinear_paired_seeds.csv",
+  "style": {
+    "background": "white",
+    "geometry": "radial_grouped_bars",
+    "labels": "minimal;actual MSE and relative reduction",
+    "palette": "retain previously approved Frozen/HOVER styling",
+    "radial_value": "five-seed mean standardized DEV MSE",
+    "radial_min": 0.0,
+    "radial_max": 0.2,
+    "shared_scale": true,
+    "error_bars": "optional sample SD;not a confidence interval"
+  },
+  "gain_formula": "100*(mean Frozen MSE-mean HOVER MSE)/mean Frozen MSE",
+  "Figure2_structure_changed": false,
+  "rendered": false,
+  "new_fits": 0,
+  "TEST_access": false
+}

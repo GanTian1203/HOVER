@@ -1,0 +1,33 @@
+{
+  "status": "PASS_240",
+  "acceptance_SHA256": "f8c5321be29e2e54185056fc23309e55583901f4dd7d7c1a9976032f43e8e1ff",
+  "records": 240,
+  "groups": 16,
+  "reused_H96_records": 60,
+  "paper_main_records": 160,
+  "counts": {
+    "FROZEN": {
+      "mse": {
+        "group_wins": 16,
+        "seed_wins": 73
+      },
+      "mae": {
+        "group_wins": 11,
+        "seed_wins": 45
+      }
+    },
+    "SIMPLE": {
+      "mse": {
+        "group_wins": 5,
+        "seed_wins": 28
+      },
+      "mae": {
+        "group_wins": 2,
+        "seed_wins": 23
+      }
+    }
+  },
+  "source_reference_SHA256": "503180aa67ea6b646d4a413bba9bdba50add9c5c2ba54572a7be1542724dfe80",
+  "TEST_access": false,
+  "new_fits": 0
+}

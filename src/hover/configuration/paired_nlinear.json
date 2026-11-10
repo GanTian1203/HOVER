@@ -1,0 +1,290 @@
+{
+  "ETTh1": {
+    "base": {
+      "lr": 0.05,
+      "batch": 32,
+      "epochs": 20,
+      "minimum_epochs": 20,
+      "patience": null,
+      "lradj": "p3_type1",
+      "objective": "MSE",
+      "selection": "fixed_last"
+    },
+    "adapter": {
+      "lr": 0.0003,
+      "retention": 3.0,
+      "batch": 64,
+      "epochs": 30,
+      "minimum_epochs": 5,
+      "patience": 3,
+      "clip": 1.0,
+      "lradj": "constant",
+      "objective": "adapter",
+      "selection": "best_validation"
+    }
+  },
+  "ETTh2": {
+    "base": {
+      "lr": 0.05,
+      "batch": 32,
+      "epochs": 20,
+      "minimum_epochs": 20,
+      "patience": null,
+      "lradj": "p3_type1",
+      "objective": "MSE",
+      "selection": "fixed_last"
+    },
+    "adapter": {
+      "lr": 0.001,
+      "retention": 3.0,
+      "batch": 64,
+      "epochs": 30,
+      "minimum_epochs": 5,
+      "patience": 3,
+      "clip": 1.0,
+      "lradj": "constant",
+      "objective": "adapter",
+      "selection": "best_validation"
+    }
+  },
+  "Traffic": {
+    "base": {
+      "lr": 0.05,
+      "batch": 32,
+      "epochs": 20,
+      "minimum_epochs": 20,
+      "patience": null,
+      "lradj": "p3_type1",
+      "objective": "MSE",
+      "selection": "fixed_last"
+    },
+    "adapter": {
+      "lr": 0.001,
+      "retention": 0.3333333333333333,
+      "batch": 64,
+      "epochs": 30,
+      "minimum_epochs": 5,
+      "patience": 3,
+      "clip": 1.0,
+      "lradj": "constant",
+      "objective": "adapter",
+      "selection": "best_validation"
+    }
+  },
+  "ECL": {
+    "base": {
+      "lr": 0.05,
+      "batch": 32,
+      "epochs": 20,
+      "minimum_epochs": 20,
+      "patience": null,
+      "lradj": "p3_type1",
+      "objective": "MSE",
+      "selection": "fixed_last"
+    },
+    "adapter": {
+      "lr": 0.001,
+      "retention": 0.3333333333333333,
+      "batch": 64,
+      "epochs": 30,
+      "minimum_epochs": 5,
+      "patience": 3,
+      "clip": 1.0,
+      "lradj": "constant",
+      "objective": "adapter",
+      "selection": "best_validation"
+    }
+  },
+  "Solar": {
+    "base": {
+      "lr": 0.05,
+      "batch": 32,
+      "epochs": 20,
+      "minimum_epochs": 20,
+      "patience": null,
+      "lradj": "p3_type1",
+      "objective": "MSE",
+      "selection": "fixed_last"
+    },
+    "adapter": {
+      "lr": 0.001,
+      "retention": 0.3333333333333333,
+      "batch": 64,
+      "epochs": 30,
+      "minimum_epochs": 5,
+      "patience": 3,
+      "clip": 1.0,
+      "lradj": "constant",
+      "objective": "adapter",
+      "selection": "best_validation"
+    }
+  },
+  "Exchange": {
+    "base": {
+      "lr": 0.05,
+      "batch": 32,
+      "epochs": 20,
+      "minimum_epochs": 20,
+      "patience": null,
+      "lradj": "p3_type1",
+      "objective": "MSE",
+      "selection": "fixed_last"
+    },
+    "adapter": {
+      "lr": 0.0003,
+      "retention": 3.0,
+      "batch": 64,
+      "epochs": 30,
+      "minimum_epochs": 5,
+      "patience": 3,
+      "clip": 1.0,
+      "lradj": "constant",
+      "objective": "adapter",
+      "selection": "best_validation"
+    }
+  },
+  "ETTm1": {
+    "base": {
+      "lr": 0.05,
+      "batch": 32,
+      "epochs": 20,
+      "minimum_epochs": 20,
+      "patience": null,
+      "lradj": "p3_type1",
+      "objective": "MSE",
+      "selection": "fixed_last"
+    },
+    "adapter": {
+      "lr": 0.001,
+      "retention": 0.3333333333333333,
+      "batch": 64,
+      "epochs": 30,
+      "minimum_epochs": 5,
+      "patience": 3,
+      "clip": 1.0,
+      "lradj": "constant",
+      "objective": "adapter",
+      "selection": "best_validation"
+    }
+  },
+  "ETTm2": {
+    "base": {
+      "lr": 0.05,
+      "batch": 32,
+      "epochs": 20,
+      "minimum_epochs": 20,
+      "patience": null,
+      "lradj": "p3_type1",
+      "objective": "MSE",
+      "selection": "fixed_last"
+    },
+    "adapter": {
+      "lr": 0.0003,
+      "retention": 3.0,
+      "batch": 64,
+      "epochs": 30,
+      "minimum_epochs": 5,
+      "patience": 3,
+      "clip": 1.0,
+      "lradj": "constant",
+      "objective": "adapter",
+      "selection": "best_validation"
+    }
+  },
+  "PEMS03": {
+    "base": {
+      "lr": 0.05,
+      "batch": 32,
+      "epochs": 20,
+      "minimum_epochs": 20,
+      "patience": null,
+      "lradj": "p3_type1",
+      "objective": "MSE",
+      "selection": "fixed_last"
+    },
+    "adapter": {
+      "lr": 0.001,
+      "retention": 0.3333333333333333,
+      "batch": 64,
+      "epochs": 30,
+      "minimum_epochs": 5,
+      "patience": 3,
+      "clip": 1.0,
+      "lradj": "constant",
+      "objective": "adapter",
+      "selection": "best_validation"
+    }
+  },
+  "PEMS04": {
+    "base": {
+      "lr": 0.05,
+      "batch": 32,
+      "epochs": 20,
+      "minimum_epochs": 20,
+      "patience": null,
+      "lradj": "p3_type1",
+      "objective": "MSE",
+      "selection": "fixed_last"
+    },
+    "adapter": {
+      "lr": 0.001,
+      "retention": 0.3333333333333333,
+      "batch": 64,
+      "epochs": 30,
+      "minimum_epochs": 5,
+      "patience": 3,
+      "clip": 1.0,
+      "lradj": "constant",
+      "objective": "adapter",
+      "selection": "best_validation"
+    }
+  },
+  "PEMS07": {
+    "base": {
+      "lr": 0.05,
+      "batch": 32,
+      "epochs": 20,
+      "minimum_epochs": 20,
+      "patience": null,
+      "lradj": "p3_type1",
+      "objective": "MSE",
+      "selection": "fixed_last"
+    },
+    "adapter": {
+      "lr": 0.001,
+      "retention": 0.3333333333333333,
+      "batch": 64,
+      "epochs": 30,
+      "minimum_epochs": 5,
+      "patience": 3,
+      "clip": 1.0,
+      "lradj": "constant",
+      "objective": "adapter",
+      "selection": "best_validation"
+    }
+  },
+  "PEMS08": {
+    "base": {
+      "lr": 0.05,
+      "batch": 32,
+      "epochs": 20,
+      "minimum_epochs": 20,
+      "patience": null,
+      "lradj": "p3_type1",
+      "objective": "MSE",
+      "selection": "fixed_last"
+    },
+    "adapter": {
+      "lr": 0.001,
+      "retention": 0.3333333333333333,
+      "batch": 64,
+      "epochs": 30,
+      "minimum_epochs": 5,
+      "patience": 3,
+      "clip": 1.0,
+      "lradj": "constant",
+      "objective": "adapter",
+      "selection": "best_validation"
+    }
+  }
+}

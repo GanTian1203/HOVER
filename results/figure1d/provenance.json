@@ -1,0 +1,36 @@
+{
+  "status": "VERIFIED_EXISTING_P3_PAIRED_DEV_EVIDENCE",
+  "backbone_identity": "P3_NLINEAR_PAIRED_ONLY_NOT_STRONG",
+  "source_reference": "results/reference/cross_backbone_DEV_records.json",
+  "source_reference_SHA256": "2622a4518d035e423b07bcaea4281b93967cc3ca8ea30f6f66fd2f2d0ae426cc",
+  "original_paired_seed_table_SHA256": "cbc5dfe4aa6cafbf1bbaeea87d027cabecd7a0af163cb9b9fbd3c49f0d0a4a45",
+  "original_independent_verification_SHA256": "538275240d1356a3aea7e7874c3ce81b4a98262ef6b2104004805af3ca935ddb",
+  "selected_datasets": [
+    "ECL",
+    "Solar",
+    "PEMS03"
+  ],
+  "seeds": [
+    951,
+    952,
+    953,
+    954,
+    955
+  ],
+  "paired_seed_rows": 15,
+  "history": 336,
+  "horizon": 96,
+  "gain_formula": "100*(mean_seed_Frozen_MSE-mean_seed_HOVER_MSE)/mean_seed_Frozen_MSE",
+  "SD": "sample SD, ddof=1",
+  "MSE_gain_uses_Strong_NLinear": false,
+  "raw_or_checkpoint_files_copied": false,
+  "new_fits": 0,
+  "TEST_access": false,
+  "main_table_cross_identity_check": {
+    "checkpoint_SHA_equal": true,
+    "valid_count_equal": true,
+    "metric_audit_atol": 1e-10,
+    "max_metric_abs_difference": 7.494005416219807e-16,
+    "original_values_preserved": true
+  }
+}

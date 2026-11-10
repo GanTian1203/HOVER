@@ -1,0 +1,11 @@
+{
+  "main": {
+    "file": "results/reference/main_DEV_seeds.csv",
+    "source_SHA256": "cc6fcf89923f1608f2d3a85e9b05e2994549b132a4e43f417fcfdf7fcdac6933"
+  },
+  "ablation": {
+    "file": "results/reference/ablation_DEV_seeds.csv",
+    "source_SHA256": "b42c8ab037e63be55cbd324eb6bd04217dd180d44b15519405a2377288ddbc36"
+  },
+  "TEST_access": false
+}

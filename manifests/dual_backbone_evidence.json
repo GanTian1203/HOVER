@@ -1,0 +1,30 @@
+{
+  "version": "GENERIC_HOVER_DUAL_BACKBONE_NARRATIVE_V1",
+  "status": "EXISTING_DEV_EVIDENCE_VERIFIED",
+  "generic_method": true,
+  "NLinear_identity": "P3_NLINEAR_PAIRED_ONLY_NOT_STRONG",
+  "figure1d": {
+    "summary": "results/figure1d/Figure1d_P3_NLinear_5seed_summary.csv",
+    "seeds": "results/figure1d/Figure1d_P3_NLinear_paired_seeds.csv",
+    "spec": "src/hover/configuration/figure1d_p3_nlinear.json",
+    "paired_seed_rows": 15,
+    "rendered": false
+  },
+  "Table2_analysis_source": "results/narrative/Table2_dual_backbone_DEV_summary.csv",
+  "capacity_control_source": "results/narrative/Representative_capacity_DEV_summary.csv",
+  "mechanism_source": "results/narrative/NLinear_mechanism_task_support.csv",
+  "complete_C_required": true,
+  "Figure2_changed": false,
+  "original_scientific_sources_unchanged": 28,
+  "existing_public_scientific_files_unchanged": 28,
+  "original_reference_SHA256": {
+    "main_DEV_seeds.csv": "2a4b7d43eb912e774fe1fd494fad24afa653e4962d2238ac683e719d7953667e",
+    "ablation_DEV_seeds.csv": "e0754aa4119012752ca3052c498ca613e64b3248c7d813d97d662c85a4b400d8",
+    "cross_backbone_DEV_records.json": "2622a4518d035e423b07bcaea4281b93967cc3ca8ea30f6f66fd2f2d0ae426cc",
+    "horizon_accepted_DEV_records.json": "85d39c7788bddb9c2c2030a029c952b5de373282cd0fce6e52d94aa0ecfe9151"
+  },
+  "reference_metrics_modified": false,
+  "new_training_fits": 0,
+  "new_GPU_jobs": 0,
+  "TEST_access": false
+}

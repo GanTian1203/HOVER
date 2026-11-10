@@ -1,0 +1,10 @@
+{
+  "version": "PAPER_SCOPE_THREE_DATASET_TABLE2_V1",
+  "Table2_datasets": ["ECL", "Solar", "PEMS03"],
+  "Table2_backbones": ["NLINEAR_PAIRED", "OLINEAR", "DLINEAR", "FITS", "ITRANSFORMER"],
+  "Table2_arms": ["FROZEN", "SIMPLE", "HOVER"],
+  "Table2_formal_records": 225,
+  "Exchange": "Retained in A and B; excluded from the default manuscript Table2 panel",
+  "P5E": "EXCLUDED_CONDITIONAL_ON_FINAL_MANUSCRIPT",
+  "TEST_access": false
+}

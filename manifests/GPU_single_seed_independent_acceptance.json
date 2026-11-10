@@ -1,0 +1,18 @@
+{
+  "status": "INDEPENDENT_GPU_SINGLE_SEED_A_B_C_PASS",
+  "formal_record_cases": 8,
+  "seed": 951,
+  "full_five_seed_reproduction": false,
+  "full_matrix_reproduction": false,
+  "smokes_PASS": 2,
+  "fit_receipts_reaudited": 21,
+  "aggregate_tolerance": 1e-10,
+  "max_reference_metric_absolute_difference": 9.992007221626409e-15,
+  "reserved_GPU_wall_seconds": 991.2810000000172,
+  "reserved_GPU_hours": 0.27535583333333813,
+  "CUDA_initialized_by_independent_CPU_auditor": false,
+  "TEST_access": false,
+  "scope": "Two real-batch technical smokes;ETTm1 A paired NLinear+HOVER951,B four controls951,C H192 three arms951;original cu118 framework read only in a separate environment",
+  "checkpoint_payloads_and_logs": "Retained privately;not redistributed",
+  "bounded_731_selection_732_confirmation_and_formal_config_rechecked": true
+}

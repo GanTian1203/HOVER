@@ -1,0 +1,210 @@
+{
+  "status": "CPU_EQUIVALENCE_AND_REFERENCES_PASS",
+  "baseline_snapshot_SHA256": "3da8064547ae7e5f2d014513263f936bd0f7ac91cacbe68cc28393368c38f962",
+  "external_cases": [
+    {
+      "status": "PASS",
+      "method": "NLINEAR_PAIRED",
+      "exact_initial_state": true,
+      "parameter_shapes": true,
+      "forward_max_abs": 0.0,
+      "gradient_and_two_Adam_steps_exact": true,
+      "old_GPU_native_and_HOVER_weights_restored": true,
+      "model_source_redistributed": false,
+      "CUDA_initialized": false,
+      "TEST_access": false
+    },
+    {
+      "status": "PASS",
+      "method": "NLINEAR_STRONG",
+      "exact_initial_state": true,
+      "parameter_shapes": true,
+      "forward_max_abs": 0.0,
+      "gradient_and_two_Adam_steps_exact": true,
+      "old_GPU_native_and_HOVER_weights_restored": false,
+      "model_source_redistributed": false,
+      "CUDA_initialized": false,
+      "TEST_access": false
+    },
+    {
+      "status": "PASS",
+      "method": "DLINEAR",
+      "exact_initial_state": true,
+      "parameter_shapes": true,
+      "forward_max_abs": 0.0,
+      "gradient_and_two_Adam_steps_exact": true,
+      "old_GPU_native_and_HOVER_weights_restored": false,
+      "model_source_redistributed": false,
+      "CUDA_initialized": false,
+      "TEST_access": false
+    },
+    {
+      "status": "PASS",
+      "method": "FITS",
+      "exact_initial_state": true,
+      "parameter_shapes": true,
+      "forward_max_abs": 0.0,
+      "gradient_and_two_Adam_steps_exact": true,
+      "old_GPU_native_and_HOVER_weights_restored": false,
+      "model_source_redistributed": false,
+      "CUDA_initialized": false,
+      "TEST_access": false
+    },
+    {
+      "status": "PASS",
+      "method": "PATCHTST",
+      "exact_initial_state": true,
+      "parameter_shapes": true,
+      "forward_max_abs": 0.0,
+      "gradient_and_two_Adam_steps_exact": true,
+      "old_GPU_native_and_HOVER_weights_restored": false,
+      "model_source_redistributed": false,
+      "CUDA_initialized": false,
+      "TEST_access": false
+    },
+    {
+      "status": "PASS",
+      "method": "ITRANSFORMER",
+      "exact_initial_state": true,
+      "parameter_shapes": true,
+      "forward_max_abs": 0.0,
+      "gradient_and_two_Adam_steps_exact": true,
+      "old_GPU_native_and_HOVER_weights_restored": false,
+      "model_source_redistributed": false,
+      "CUDA_initialized": false,
+      "TEST_access": false
+    },
+    {
+      "status": "PASS",
+      "method": "SIGMA",
+      "exact_initial_state": true,
+      "parameter_shapes": true,
+      "forward_max_abs": 0.0,
+      "gradient_and_two_Adam_steps_exact": true,
+      "old_GPU_native_and_HOVER_weights_restored": false,
+      "model_source_redistributed": false,
+      "CUDA_initialized": false,
+      "TEST_access": false
+    },
+    {
+      "status": "PASS",
+      "method": "TIMEMIXER",
+      "exact_initial_state": true,
+      "parameter_shapes": true,
+      "forward_max_abs": 0.0,
+      "gradient_and_two_Adam_steps_exact": true,
+      "old_GPU_native_and_HOVER_weights_restored": false,
+      "model_source_redistributed": false,
+      "CUDA_initialized": false,
+      "TEST_access": false
+    },
+    {
+      "status": "PASS",
+      "method": "OLINEAR",
+      "exact_initial_state": true,
+      "parameter_shapes": true,
+      "forward_max_abs": 0.0,
+      "gradient_and_two_Adam_steps_exact": true,
+      "old_GPU_native_and_HOVER_weights_restored": false,
+      "model_source_redistributed": false,
+      "CUDA_initialized": false,
+      "TEST_access": false
+    }
+  ],
+  "small_backbone_class_AST_proofs": [
+    {
+      "model": "NLINEAR",
+      "Model_class_AST_exact": true,
+      "external_file_SHA256": "cabdcf5ac2658faa45b8887846182d222eb0a98c42059079c533df0fe689d879"
+    },
+    {
+      "model": "DLINEAR",
+      "Model_class_AST_exact": true,
+      "external_file_SHA256": "0893b53cb6473d6bdca7aeca514cb3ee12efa6df227c29c4469571c9711451cc"
+    },
+    {
+      "model": "FITS",
+      "Model_class_AST_exact": true,
+      "external_file_SHA256": "11c28af651bada1ba3e1e19c1cec1e835cc4b974d75da27df7b84d322096c90c"
+    }
+  ],
+  "accepted_result_files_unchanged": [
+    {
+      "path": "results/figure1d/Figure1d_P3_NLinear_5seed_summary.csv",
+      "SHA256": "b22e4f8cf62250b34a565c60efedde0b4b17b11f75283f5ff43512ec65dd34da"
+    },
+    {
+      "path": "results/figure1d/Figure1d_P3_NLinear_paired_seeds.csv",
+      "SHA256": "d5051c6713c55e41abffe9b318047f3023e31143f0444a258fd8e311db28a21b"
+    },
+    {
+      "path": "results/figure1d/provenance.json",
+      "SHA256": "7158cf184005a9994f10ab862794cc158748c9d257dea75a1faa08b863b49799"
+    },
+    {
+      "path": "results/horizon_final/DEV_32_paired_comparisons.csv",
+      "SHA256": "059a81c4ee7c958b8584b5281809564810f05bbd22c4cc4a18601909d66c9e74"
+    },
+    {
+      "path": "results/horizon_final/DEV_48_system_groups.csv",
+      "SHA256": "ede888313f2519245d81ea723a36e6757f44119b3be0eeb06a24d8386b98e4fe"
+    },
+    {
+      "path": "results/horizon_final/Figure_Horizon_MAE_main.csv",
+      "SHA256": "f110e2ab98a03b554aa2b4f8eb776a565f9f2efa811f6bca86438480a000c12f"
+    },
+    {
+      "path": "results/horizon_final/Figure_Horizon_MSE_main.csv",
+      "SHA256": "fb72c90410f1038b4be1bdd1bb02b4323915bacd8c4f5b6bb1ecf316ab5bc01f"
+    },
+    {
+      "path": "results/horizon_final/independent_acceptance_reference.json",
+      "SHA256": "626c5d65ebcaac77ea41cb2207c7915abc71f55b4d161cd0f4d4f03ad454e49c"
+    },
+    {
+      "path": "results/narrative/NLinear_mechanism_task_support.csv",
+      "SHA256": "3ca85f9189216fdef4eafe7b950014a665bdb0fb37bdbcfcafaab57e612e18e2"
+    },
+    {
+      "path": "results/narrative/Representative_capacity_DEV_summary.csv",
+      "SHA256": "e68877a15969a0d711fec46ae9a1a5ba27dfbafc4ef28fa6508c418d72d07dfd"
+    },
+    {
+      "path": "results/narrative/Table2_dual_backbone_DEV_summary.csv",
+      "SHA256": "a3476e672c25c8656c2921f2db362698351773ce1acf6ced59829740e5ccf211"
+    },
+    {
+      "path": "results/presentation/C_main_accepted_DEV_records.json",
+      "SHA256": "8a1566095475c565c7dacfea790e7d1fe30e92ae27d416f9f7cde87c00775b66"
+    },
+    {
+      "path": "results/reference/ablation_DEV_seeds.csv",
+      "SHA256": "e0754aa4119012752ca3052c498ca613e64b3248c7d813d97d662c85a4b400d8"
+    },
+    {
+      "path": "results/reference/accepted_reference_provenance.json",
+      "SHA256": "3ec1ac0161784831b707691725e38bacd7c12eedd93f663b2edb369fada8f546"
+    },
+    {
+      "path": "results/reference/cross_backbone_DEV_records.json",
+      "SHA256": "2622a4518d035e423b07bcaea4281b93967cc3ca8ea30f6f66fd2f2d0ae426cc"
+    },
+    {
+      "path": "results/reference/horizon_accepted_DEV_records.json",
+      "SHA256": "503180aa67ea6b646d4a413bba9bdba50add9c5c2ba54572a7be1542724dfe80"
+    },
+    {
+      "path": "results/reference/main_DEV_seeds.csv",
+      "SHA256": "2a4b7d43eb912e774fe1fd494fad24afa653e4962d2238ac683e719d7953667e"
+    },
+    {
+      "path": "results/reproduction_validation/ETTm1_seed951_DEV_comparison.csv",
+      "SHA256": "854edeb1f32d8c930b60018317570d9daea3038941f087a2bb12ac01992567c3"
+    }
+  ],
+  "new_real_training_fits": 0,
+  "new_GPU_jobs": 0,
+  "TEST_access": false,
+  "CPU_tests_run": 11,
+  "CLI_commands_tested": 17
+}
