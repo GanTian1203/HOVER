@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Environments and local configuration
+.venv/
+venv/
+env/
+.conda/
+.env
+.env.*
+!.env.example
+*.local
+
+# Editor and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Large data, model weights, and temporary outputs
+/data/*
+!/data/README.md
+/checkpoints/
+/weights/
+/runs/
+/logs/
+/tmp/
+*.ckpt
+*.pth
+*.pt
+*.safetensors
+*.npz
+
+# Secrets and credentials
+*.pem
+*.key
+*credentials*.json
+*token*.txt
