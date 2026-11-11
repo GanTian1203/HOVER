@@ -1,0 +1,102 @@
+{
+  "snapshot_time": "2026-11-08T19:38:01.164261+08:00",
+  "main": {
+    "status": "ACCEPTED_FROZEN",
+    "version": "HOVER_TABLE1_ORIGINAL_FORMAL_DEV_336_96_5SEED_V1",
+    "systems": 10,
+    "tasks": 12,
+    "seed_records": 600,
+    "acceptance_SHA256": "2d95f074d540f68a77b31ddc07c7ccb3b327a55449450c1acda3357941071b66",
+    "OLinear_HOVER_best_MSE": 8,
+    "OLinear_HOVER_best_MAE": 7,
+    "two_fixed_HOVER_best_cells": 18
+  },
+  "ablation": {
+    "status": "PASS_240",
+    "tasks": 12,
+    "controls": 4,
+    "records": 240,
+    "acceptance_SHA256": "950cf6cedc5ac338db39989038e6775bf26fe135d5290d8a153956863f9a612a"
+  },
+  "horizons": {
+    "status": "PASS_240",
+    "reused_H96_records": 60,
+    "required_new_formal": 180,
+    "required_total_formal": 240,
+    "accepted_new_units": [
+      {
+        "dataset": "ECL",
+        "horizon": 192,
+        "records": 15
+      },
+      {
+        "dataset": "ECL",
+        "horizon": 336,
+        "records": 15
+      },
+      {
+        "dataset": "ECL",
+        "horizon": 720,
+        "records": 15
+      },
+      {
+        "dataset": "ETTm1",
+        "horizon": 192,
+        "records": 15
+      },
+      {
+        "dataset": "ETTm1",
+        "horizon": 336,
+        "records": 15
+      },
+      {
+        "dataset": "ETTm1",
+        "horizon": 720,
+        "records": 15
+      },
+      {
+        "dataset": "PEMS03",
+        "horizon": 12,
+        "records": 15
+      },
+      {
+        "dataset": "PEMS03",
+        "horizon": 24,
+        "records": 15
+      },
+      {
+        "dataset": "PEMS03",
+        "horizon": 48,
+        "records": 15
+      },
+      {
+        "dataset": "Solar",
+        "horizon": 192,
+        "records": 15
+      },
+      {
+        "dataset": "Solar",
+        "horizon": 336,
+        "records": 15
+      },
+      {
+        "dataset": "Solar",
+        "horizon": 720,
+        "records": 15
+      }
+    ],
+    "pending_units": [],
+    "exported_reference_records": 240,
+    "snapshot_semantics": "Accepted exported subset; no provisional result cells"
+  },
+  "TEST_access": false,
+  "raw_result_files_copied": false,
+  "Table2": {
+    "datasets": [
+      "ECL",
+      "Solar",
+      "PEMS03"
+    ],
+    "records": 225
+  }
+}

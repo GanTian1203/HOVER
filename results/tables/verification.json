@@ -1,0 +1,11 @@
+{
+  "status": "ACCEPTED_DEV_TABLES_RECOMPUTED",
+  "records": {
+    "A": 600,
+    "Table2": 225,
+    "B_controls_and_full": 300,
+    "C": 240
+  },
+  "new_fits": 0,
+  "TEST_access": false
+}

@@ -1,0 +1,52 @@
+{
+  "status": "PASS_EXISTING_ACCEPTED_REFERENCE_VIEWS",
+  "views": {
+    "A": {
+      "version": "BODY_LAYERED_SIMPLE_SCHEME_B_V1",
+      "panel": "A",
+      "record_count": 600,
+      "source_SHA256": "2a4b7d43eb912e774fe1fd494fad24afa653e4962d2238ac683e719d7953667e",
+      "kind": "EXISTING_ACCEPTED_DEV_VIEW",
+      "new_fits_authorized": 0,
+      "TEST_access": false
+    },
+    "Table2": {
+      "version": "BODY_LAYERED_SIMPLE_SCHEME_B_V1",
+      "panel": "Table2",
+      "record_count": 150,
+      "source_SHA256": "2622a4518d035e423b07bcaea4281b93967cc3ca8ea30f6f66fd2f2d0ae426cc",
+      "kind": "EXISTING_ACCEPTED_DEV_VIEW",
+      "new_fits_authorized": 0,
+      "TEST_access": false
+    },
+    "Capacity": {
+      "version": "BODY_LAYERED_SIMPLE_SCHEME_B_V1",
+      "panel": "Capacity",
+      "record_count": 90,
+      "source_SHA256": "2622a4518d035e423b07bcaea4281b93967cc3ca8ea30f6f66fd2f2d0ae426cc",
+      "kind": "EXISTING_ACCEPTED_DEV_VIEW",
+      "new_fits_authorized": 0,
+      "TEST_access": false
+    },
+    "B": {
+      "version": "BODY_LAYERED_SIMPLE_SCHEME_B_V1",
+      "panel": "B",
+      "record_count": 300,
+      "source_SHA256": "e0754aa4119012752ca3052c498ca613e64b3248c7d813d97d662c85a4b400d8",
+      "kind": "EXISTING_ACCEPTED_DEV_VIEW",
+      "new_fits_authorized": 0,
+      "TEST_access": false
+    },
+    "C": {
+      "version": "BODY_LAYERED_SIMPLE_SCHEME_B_V1",
+      "panel": "C",
+      "record_count": 160,
+      "source_SHA256": "503180aa67ea6b646d4a413bba9bdba50add9c5c2ba54572a7be1542724dfe80",
+      "kind": "EXISTING_ACCEPTED_DEV_VIEW",
+      "new_fits_authorized": 0,
+      "TEST_access": false
+    }
+  },
+  "training_started": false,
+  "TEST_access": false
+}

@@ -1,0 +1,15 @@
+# Original version generation; CPU build, not the formal CUDA build.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.0.0+cpu
+torchvision==0.15.1+cpu
+numpy==1.23.5
+pandas==1.5.3
+scipy==1.10.1
+scikit-learn==1.2.2
+matplotlib==3.7.0
+einops==0.5.0
+reformer-pytorch==1.4.4
+seaborn==0.13.2
+timm==0.6.13
+charset-normalizer==3.3.2
+psutil==5.9.0

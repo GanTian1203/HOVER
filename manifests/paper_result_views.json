@@ -1,0 +1,46 @@
+{
+  "presentation_version": "BODY_LAYERED_SIMPLE_SCHEME_B_V1",
+  "metrics": [
+    "MSE",
+    "MAE"
+  ],
+  "role": "DEV",
+  "new_fits_authorized": 0,
+  "panels": {
+    "A": {
+      "tier": "main",
+      "source": "results/reference/main_DEV_seeds.csv",
+      "records": 600,
+      "requires_complete_C_acceptance": false
+    },
+    "Table2": {
+      "tier": "main",
+      "source": "results/reference/cross_backbone_DEV_records.json",
+      "records": 150,
+      "requires_complete_C_acceptance": false
+    },
+    "Capacity": {
+      "tier": "auxiliary_methodological_control",
+      "source": "results/reference/cross_backbone_DEV_records.json",
+      "records": 90,
+      "requires_complete_C_acceptance": false
+    },
+    "B": {
+      "tier": "main_mechanism",
+      "source": "results/reference/ablation_DEV_seeds.csv",
+      "records": 300,
+      "requires_complete_C_acceptance": false
+    },
+    "C": {
+      "tier": "main",
+      "source": "results/reference/horizon_accepted_DEV_records.json",
+      "records": 160,
+      "requires_complete_C_acceptance": true
+    }
+  },
+  "preserved_archive": {
+    "Table2_records": 225,
+    "C_target_records": 240
+  },
+  "TEST_access": false
+}

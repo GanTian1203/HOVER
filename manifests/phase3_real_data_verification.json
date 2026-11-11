@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "dataset": "ETTm1",
+  "history": 336,
+  "formal_horizon": 96,
+  "source_prefix_SHA256": "d22fb3d91001b7328cdb2c171cbe14a7977aee8d736d451f566f813b53541074",
+  "array_differences": {
+    "z": {
+      "max_abs": 0.0,
+      "exact_equal": true,
+      "shape": [
+        46080,
+        7
+      ]
+    },
+    "mu": {
+      "max_abs": 0.0,
+      "exact_equal": true,
+      "shape": [
+        7
+      ]
+    },
+    "sd": {
+      "max_abs": 0.0,
+      "exact_equal": true,
+      "shape": [
+        7
+      ]
+    },
+    "raw": {
+      "max_abs": 0.0,
+      "exact_equal": true,
+      "shape": [
+        46080,
+        7
+      ]
+    },
+    "observed": {
+      "max_abs": 0.0,
+      "exact_equal": true,
+      "shape": [
+        46080,
+        7
+      ]
+    }
+  },
+  "canonical_z_SHA256": "a61382b5eafd9a2e0b649b396b038de05d106378e282ce7479568630fa7fed85",
+  "calendar_equal": true,
+  "formal_TRAIN_statistics_rows": [
+    0,
+    34560
+  ],
+  "inner_statistics_rows": [
+    0,
+    27648
+  ],
+  "formal_DEV_windows": 11425,
+  "formal_DEV_elements": 7677600,
+  "TEST_bytes_downloaded": 0,
+  "TEST_access": false,
+  "CUDA_initialized": false,
+  "full_dataset_evaluation": false
+}

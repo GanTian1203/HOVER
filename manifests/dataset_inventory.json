@@ -1,0 +1,422 @@
+[
+  {
+    "dataset": "ETTh1",
+    "channels": 7,
+    "TRAIN_rows": [
+      0,
+      8640
+    ],
+    "DEV_rows": [
+      8640,
+      11520
+    ],
+    "cache_SHA256": "4fd05965fdc0afc6eb4ce6436d68c1a9df1302c2ef2043dcb96f040772163439",
+    "history": 336,
+    "horizon": 96,
+    "training_origins_inclusive": [
+      336,
+      8544
+    ],
+    "dev_origins_inclusive": [
+      8640,
+      11424
+    ],
+    "normalization": "Accepted population mean/std of full officialTRAIN only; never re-estimate on DEV or TEST",
+    "evaluation_scale": "accepted standardized multivariate targets",
+    "calendar": "verified ETT time features",
+    "data_included": false,
+    "redistribution_permission": "UNREVIEWED_NO_DATA_COPIED",
+    "source_recovery": "PINNED_PUBLIC_SOURCE_AND_ACCEPTED_PREFIX_METADATA; real preparation not rerun",
+    "source_url": "https://raw.githubusercontent.com/zhouhaoyi/ETDataset/1d16c8f4f943005d613b5bc962e9eeb06058cf07/ETT-small/ETTh1.csv",
+    "source_full_SHA256": null,
+    "canonical_z_SHA256": "71efdb1417146b1cdd662f5b6d4c4ae90036346e31a01cdbf34049821ba0fb72"
+  },
+  {
+    "dataset": "ETTh2",
+    "channels": 7,
+    "TRAIN_rows": [
+      0,
+      8640
+    ],
+    "DEV_rows": [
+      8640,
+      11520
+    ],
+    "cache_SHA256": "5827bdac93a5cccb8428abc8f7edfe94869f1c242f6e948c65db5881cda41178",
+    "history": 336,
+    "horizon": 96,
+    "training_origins_inclusive": [
+      336,
+      8544
+    ],
+    "dev_origins_inclusive": [
+      8640,
+      11424
+    ],
+    "normalization": "Accepted population mean/std of full officialTRAIN only; never re-estimate on DEV or TEST",
+    "evaluation_scale": "accepted standardized multivariate targets",
+    "calendar": "verified ETT time features",
+    "data_included": false,
+    "redistribution_permission": "UNREVIEWED_NO_DATA_COPIED",
+    "source_recovery": "PINNED_PUBLIC_SOURCE_AND_ACCEPTED_PREFIX_METADATA; real preparation not rerun",
+    "source_url": "https://raw.githubusercontent.com/zhouhaoyi/ETDataset/1d16c8f4f943005d613b5bc962e9eeb06058cf07/ETT-small/ETTh2.csv",
+    "source_full_SHA256": null,
+    "canonical_z_SHA256": "ce45cb01820f8461159c6abd6b59a1540130ebbad383818e77ada6369d673c84"
+  },
+  {
+    "dataset": "Traffic",
+    "channels": 862,
+    "TRAIN_rows": [
+      0,
+      12280
+    ],
+    "DEV_rows": [
+      12280,
+      14036
+    ],
+    "cache_SHA256": "3e170be6fdde4b3794a9991f8441a8514d1d2ae8bbd4ee23769469aff865ff5b",
+    "history": 336,
+    "horizon": 96,
+    "training_origins_inclusive": [
+      336,
+      12184
+    ],
+    "dev_origins_inclusive": [
+      12280,
+      13940
+    ],
+    "normalization": "Accepted population mean/std of full officialTRAIN only; never re-estimate on DEV or TEST",
+    "evaluation_scale": "accepted standardized multivariate targets",
+    "calendar": "no invented calendar",
+    "data_included": false,
+    "redistribution_permission": "UNREVIEWED_NO_DATA_COPIED",
+    "source_recovery": "PINNED_PUBLIC_SOURCE_AND_ACCEPTED_PREFIX_METADATA; real preparation not rerun",
+    "source_url": "https://raw.githubusercontent.com/laiguokun/multivariate-time-series-data/7f402f185cc2435b5e66aed13a3b560ed142e023/traffic/traffic.txt.gz",
+    "source_full_SHA256": "c7be5a00519d344a5ec0eabdbfec5ea0c7dd1eed5f9b1a3843a93bb88086a56d",
+    "decoded_prefix_SHA256": null
+  },
+  {
+    "dataset": "ECL",
+    "channels": 321,
+    "TRAIN_rows": [
+      0,
+      18412
+    ],
+    "DEV_rows": [
+      18412,
+      21044
+    ],
+    "cache_SHA256": "0442213c8f2d737b7a64dc4deb89b995553fea09ac5be082a0365cd404a486d3",
+    "history": 336,
+    "horizon": 96,
+    "training_origins_inclusive": [
+      336,
+      18316
+    ],
+    "dev_origins_inclusive": [
+      18412,
+      20948
+    ],
+    "normalization": "Accepted population mean/std of full officialTRAIN only; never re-estimate on DEV or TEST",
+    "evaluation_scale": "accepted standardized multivariate targets",
+    "calendar": "no invented calendar",
+    "data_included": false,
+    "redistribution_permission": "UNREVIEWED_NO_DATA_COPIED",
+    "source_recovery": "PINNED_PUBLIC_SOURCE_AND_ACCEPTED_PREFIX_METADATA; real preparation not rerun",
+    "source_url": "https://raw.githubusercontent.com/laiguokun/multivariate-time-series-data/7f402f185cc2435b5e66aed13a3b560ed142e023/electricity/electricity.txt.gz",
+    "source_full_SHA256": "3c4c069588198c1fcc95cace7bb69c99922129edfd673b7286661dad20badefa",
+    "decoded_prefix_SHA256": null
+  },
+  {
+    "dataset": "Solar",
+    "channels": 137,
+    "TRAIN_rows": [
+      0,
+      36792
+    ],
+    "DEV_rows": [
+      36792,
+      42048
+    ],
+    "cache_SHA256": "1582594dd46fc33458a20319e3eea52eaff50d962d4398a266958fb39df6bb39",
+    "history": 336,
+    "horizon": 96,
+    "training_origins_inclusive": [
+      336,
+      36696
+    ],
+    "dev_origins_inclusive": [
+      36792,
+      41952
+    ],
+    "normalization": "Accepted population mean/std of full officialTRAIN only; never re-estimate on DEV or TEST",
+    "evaluation_scale": "accepted standardized multivariate targets",
+    "calendar": "no invented calendar",
+    "data_included": false,
+    "redistribution_permission": "UNREVIEWED_NO_DATA_COPIED",
+    "source_recovery": "PINNED_PUBLIC_SOURCE_AND_ACCEPTED_PREFIX_METADATA; real preparation not rerun",
+    "source_url": "https://raw.githubusercontent.com/laiguokun/multivariate-time-series-data/7f402f185cc2435b5e66aed13a3b560ed142e023/solar-energy/solar_AL.txt.gz",
+    "source_full_SHA256": null,
+    "decoded_prefix_SHA256": "d18bd01de7316586f376e9603a0aa00014204a4ef158d83819b44655523245d4"
+  },
+  {
+    "dataset": "Exchange",
+    "channels": 8,
+    "TRAIN_rows": [
+      0,
+      5311
+    ],
+    "DEV_rows": [
+      5311,
+      6071
+    ],
+    "cache_SHA256": "23b38ea8abcdba4f3bade5c061f707cd441090dae596d6fb07def41a3b6fcb2d",
+    "history": 336,
+    "horizon": 96,
+    "training_origins_inclusive": [
+      336,
+      5215
+    ],
+    "dev_origins_inclusive": [
+      5311,
+      5975
+    ],
+    "normalization": "Accepted population mean/std of full officialTRAIN only; never re-estimate on DEV or TEST",
+    "evaluation_scale": "accepted standardized multivariate targets",
+    "calendar": "no invented calendar",
+    "data_included": false,
+    "redistribution_permission": "UNREVIEWED_NO_DATA_COPIED",
+    "source_recovery": "PINNED_PUBLIC_SOURCE_AND_ACCEPTED_PREFIX_METADATA; real preparation not rerun",
+    "source_url": "https://raw.githubusercontent.com/laiguokun/multivariate-time-series-data/7f402f185cc2435b5e66aed13a3b560ed142e023/exchange_rate/exchange_rate.txt.gz",
+    "source_full_SHA256": null,
+    "decoded_prefix_SHA256": "aff783797a5a4c16622a4cb7f9ae9e5a8a05314aec61e71a78a26f252e23dd05"
+  },
+  {
+    "dataset": "ETTm1",
+    "channels": 7,
+    "TRAIN_rows": [
+      0,
+      34560
+    ],
+    "DEV_rows": [
+      34560,
+      46080
+    ],
+    "cache_SHA256": "cc02d7abc029571c56c6c1684d8a9223806509833972cc0bc0ee802d394d83db",
+    "history": 336,
+    "horizon": 96,
+    "training_origins_inclusive": [
+      336,
+      34464
+    ],
+    "dev_origins_inclusive": [
+      34560,
+      45984
+    ],
+    "normalization": "population fullTRAIN only; labels from observed raw, not filled input cache",
+    "evaluation_scale": "accepted standardized multivariate targets",
+    "calendar": "verified ETT time features",
+    "data_included": false,
+    "redistribution_permission": "UNREVIEWED_NO_DATA_COPIED",
+    "publisher_source": {
+      "url": "https://raw.githubusercontent.com/zhouhaoyi/ETDataset/1d16c8f4f943005d613b5bc962e9eeb06058cf07/ETT-small/ETTm1.csv",
+      "commit": "1d16c8f4f943005d613b5bc962e9eeb06058cf07",
+      "sha256": "6ce1759b1a18e3328421d5d75fadcb316c449fcd7cec32820c8dafda71986c9e"
+    },
+    "nominal_minutes": 15,
+    "source_manifest_SHA256": "bd11fee77694d37fb43baf0e2b53df39371fb58e00c0aad176efa6104b9215c5",
+    "source_recovery": "PINNED_PUBLIC_SOURCE_AND_ACCEPTED_PREFIX_METADATA; real preparation not rerun",
+    "source_url": "https://raw.githubusercontent.com/zhouhaoyi/ETDataset/1d16c8f4f943005d613b5bc962e9eeb06058cf07/ETT-small/ETTm1.csv",
+    "source_full_SHA256": "6ce1759b1a18e3328421d5d75fadcb316c449fcd7cec32820c8dafda71986c9e"
+  },
+  {
+    "dataset": "ETTm2",
+    "channels": 7,
+    "TRAIN_rows": [
+      0,
+      34560
+    ],
+    "DEV_rows": [
+      34560,
+      46080
+    ],
+    "cache_SHA256": "7074cac9cc6cc56ff7aff673387d5038da09fe0cdf4f16946ac28d86f261306c",
+    "history": 336,
+    "horizon": 96,
+    "training_origins_inclusive": [
+      336,
+      34464
+    ],
+    "dev_origins_inclusive": [
+      34560,
+      45984
+    ],
+    "normalization": "population fullTRAIN only; labels from observed raw, not filled input cache",
+    "evaluation_scale": "accepted standardized multivariate targets",
+    "calendar": "verified ETT time features",
+    "data_included": false,
+    "redistribution_permission": "UNREVIEWED_NO_DATA_COPIED",
+    "publisher_source": {
+      "url": "https://raw.githubusercontent.com/zhouhaoyi/ETDataset/1d16c8f4f943005d613b5bc962e9eeb06058cf07/ETT-small/ETTm2.csv",
+      "commit": "1d16c8f4f943005d613b5bc962e9eeb06058cf07",
+      "sha256": "db973ca252c6410a30d0469b13d696cf919648d0f3fd588c60f03fdbdbadd1fd"
+    },
+    "nominal_minutes": 15,
+    "source_manifest_SHA256": "17e6f4371216d48ed8841de0ec529730891d02a1af8896d304f706aed9ef9854",
+    "source_recovery": "PINNED_PUBLIC_SOURCE_AND_ACCEPTED_PREFIX_METADATA; real preparation not rerun",
+    "source_url": "https://raw.githubusercontent.com/zhouhaoyi/ETDataset/1d16c8f4f943005d613b5bc962e9eeb06058cf07/ETT-small/ETTm2.csv",
+    "source_full_SHA256": "db973ca252c6410a30d0469b13d696cf919648d0f3fd588c60f03fdbdbadd1fd"
+  },
+  {
+    "dataset": "PEMS03",
+    "channels": 358,
+    "TRAIN_rows": [
+      0,
+      15724
+    ],
+    "DEV_rows": [
+      15724,
+      20966
+    ],
+    "cache_SHA256": "6be80834ecd25b3608f127d5eb53c5604bd874597404b6652712e7544472ea5b",
+    "history": 336,
+    "horizon": 96,
+    "training_origins_inclusive": [
+      336,
+      15628
+    ],
+    "dev_origins_inclusive": [
+      15724,
+      20870
+    ],
+    "normalization": "population fullTRAIN only; labels from observed raw, not filled input cache",
+    "evaluation_scale": "accepted standardized multivariate targets",
+    "calendar": "no invented calendar",
+    "data_included": false,
+    "redistribution_permission": "UNREVIEWED_NO_DATA_COPIED",
+    "publisher_source": {
+      "url": "https://raw.githubusercontent.com/guoshnBJTU/ASTGNN/9c2e19b98c4cedf1f35214d8789685b6381b3aad/data/PEMS03/PEMS03.npz",
+      "commit": "9c2e19b98c4cedf1f35214d8789685b6381b3aad",
+      "sha256": "34859517425eded66a0014db63de54b95d0428c38890741a1710ed4d3b043de8"
+    },
+    "nominal_minutes": 5,
+    "source_manifest_SHA256": "74c40ca041315bdce2b110d61a9d7c030c176d85461b7fdd35324db7d1f97a37",
+    "source_recovery": "PINNED_PUBLIC_SOURCE_AND_ACCEPTED_PREFIX_METADATA; real preparation not rerun",
+    "source_url": "https://raw.githubusercontent.com/guoshnBJTU/ASTGNN/9c2e19b98c4cedf1f35214d8789685b6381b3aad/data/PEMS03/PEMS03.npz",
+    "source_full_SHA256": "34859517425eded66a0014db63de54b95d0428c38890741a1710ed4d3b043de8"
+  },
+  {
+    "dataset": "PEMS04",
+    "channels": 307,
+    "TRAIN_rows": [
+      0,
+      10195
+    ],
+    "DEV_rows": [
+      10195,
+      13593
+    ],
+    "cache_SHA256": "1c98d9f132edb70b74d776daa43e7aaa0bac7b3a252884b5591f83b0160c1734",
+    "history": 336,
+    "horizon": 96,
+    "training_origins_inclusive": [
+      336,
+      10099
+    ],
+    "dev_origins_inclusive": [
+      10195,
+      13497
+    ],
+    "normalization": "population fullTRAIN only; labels from observed raw, not filled input cache",
+    "evaluation_scale": "accepted standardized multivariate targets",
+    "calendar": "no invented calendar",
+    "data_included": false,
+    "redistribution_permission": "UNREVIEWED_NO_DATA_COPIED",
+    "publisher_source": {
+      "url": "https://raw.githubusercontent.com/guoshnBJTU/ASTGNN/9c2e19b98c4cedf1f35214d8789685b6381b3aad/data/PEMS04/PEMS04.npz",
+      "commit": "9c2e19b98c4cedf1f35214d8789685b6381b3aad",
+      "sha256": "95a3c9b720fffdb85f0330d09bfab41b0b3cad0ca86c0d7d5f3accacb4ac999a"
+    },
+    "nominal_minutes": 5,
+    "source_manifest_SHA256": "72f49e17ef24d219a4cc27ac16bcabd065da63ae57db32d6802d93ad98d510c2",
+    "source_recovery": "PINNED_PUBLIC_SOURCE_AND_ACCEPTED_PREFIX_METADATA; real preparation not rerun",
+    "source_url": "https://raw.githubusercontent.com/guoshnBJTU/ASTGNN/9c2e19b98c4cedf1f35214d8789685b6381b3aad/data/PEMS04/PEMS04.npz",
+    "source_full_SHA256": "95a3c9b720fffdb85f0330d09bfab41b0b3cad0ca86c0d7d5f3accacb4ac999a"
+  },
+  {
+    "dataset": "PEMS07",
+    "channels": 883,
+    "TRAIN_rows": [
+      0,
+      16934
+    ],
+    "DEV_rows": [
+      16934,
+      22579
+    ],
+    "cache_SHA256": "1161acf6c755fdeb8b34b8563f472b671a94431ce029315e74273370f45c12a7",
+    "history": 336,
+    "horizon": 96,
+    "training_origins_inclusive": [
+      336,
+      16838
+    ],
+    "dev_origins_inclusive": [
+      16934,
+      22483
+    ],
+    "normalization": "population fullTRAIN only; labels from observed raw, not filled input cache",
+    "evaluation_scale": "accepted standardized multivariate targets",
+    "calendar": "no invented calendar",
+    "data_included": false,
+    "redistribution_permission": "UNREVIEWED_NO_DATA_COPIED",
+    "publisher_source": {
+      "url": "https://raw.githubusercontent.com/guoshnBJTU/ASTGNN/9c2e19b98c4cedf1f35214d8789685b6381b3aad/data/PEMS07/PEMS07.npz",
+      "commit": "9c2e19b98c4cedf1f35214d8789685b6381b3aad",
+      "sha256": "a07887e610aa986276209bc9384d14ed7858fdcad1ded67f53dca19eb828600b"
+    },
+    "nominal_minutes": 5,
+    "source_manifest_SHA256": "a809a865403da322ea8a8c08a3e8ec4adaea568408130b3d88d68e6458a6dc17",
+    "source_recovery": "PINNED_PUBLIC_SOURCE_AND_ACCEPTED_PREFIX_METADATA; real preparation not rerun",
+    "source_url": "https://raw.githubusercontent.com/guoshnBJTU/ASTGNN/9c2e19b98c4cedf1f35214d8789685b6381b3aad/data/PEMS07/PEMS07.npz",
+    "source_full_SHA256": "a07887e610aa986276209bc9384d14ed7858fdcad1ded67f53dca19eb828600b"
+  },
+  {
+    "dataset": "PEMS08",
+    "channels": 170,
+    "TRAIN_rows": [
+      0,
+      10713
+    ],
+    "DEV_rows": [
+      10713,
+      14284
+    ],
+    "cache_SHA256": "bcd08fa73ce5f9f6cad676a9c2b49d9f416ab6ff3b2fd8584ad6e75850dc5cff",
+    "history": 336,
+    "horizon": 96,
+    "training_origins_inclusive": [
+      336,
+      10617
+    ],
+    "dev_origins_inclusive": [
+      10713,
+      14188
+    ],
+    "normalization": "population fullTRAIN only; labels from observed raw, not filled input cache",
+    "evaluation_scale": "accepted standardized multivariate targets",
+    "calendar": "no invented calendar",
+    "data_included": false,
+    "redistribution_permission": "UNREVIEWED_NO_DATA_COPIED",
+    "publisher_source": {
+      "url": "https://raw.githubusercontent.com/guoshnBJTU/ASTGNN/9c2e19b98c4cedf1f35214d8789685b6381b3aad/data/PEMS08/PEMS08.npz",
+      "commit": "9c2e19b98c4cedf1f35214d8789685b6381b3aad",
+      "sha256": "e1d03ce74e9fb79149e6e7c37c680214822c4a285baa2f42278cacabcd25c075"
+    },
+    "nominal_minutes": 5,
+    "source_manifest_SHA256": "c38e7f1edaada379c072eb91ea6f4447774151ad96815976aa58dcee77695774",
+    "source_recovery": "PINNED_PUBLIC_SOURCE_AND_ACCEPTED_PREFIX_METADATA; real preparation not rerun",
+    "source_url": "https://raw.githubusercontent.com/guoshnBJTU/ASTGNN/9c2e19b98c4cedf1f35214d8789685b6381b3aad/data/PEMS08/PEMS08.npz",
+    "source_full_SHA256": "e1d03ce74e9fb79149e6e7c37c680214822c4a285baa2f42278cacabcd25c075"
+  }
+]

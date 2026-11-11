@@ -1,0 +1,5 @@
+control,tasks,MSE_Full_HOVER_winning_tasks,MAE_Full_HOVER_winning_tasks,role,TEST_access
+history_only,12,11,10,DEV,False
+no_history_direct,12,9,7,DEV,False
+concatenation,12,8,8,DEV,False
+history_condition_replacement,12,6,10,DEV,False

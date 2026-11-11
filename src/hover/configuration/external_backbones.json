@@ -1,0 +1,136 @@
+{
+  "NLINEAR": {
+    "name": "NLINEAR",
+    "source_key": "LTSF",
+    "repository": "https://github.com/cure-lab/LTSF-Linear",
+    "paper_title": "Are Transformers Effective for Time Series Forecasting?",
+    "paper_url": "https://arxiv.org/abs/2205.13504",
+    "commit": "0c113668a3b88c4c4ee586b8c5ec3e539c4de5a6",
+    "module_relative": "models/NLinear.py",
+    "module_SHA256": "cabdcf5ac2658faa45b8887846182d222eb0a98c42059079c533df0fe689d879",
+    "license": "Apache-2.0",
+    "license_sources": [
+      "https://github.com/cure-lab/LTSF-Linear/blob/0c113668a3b88c4c4ee586b8c5ec3e539c4de5a6/LICENSE"
+    ],
+    "mode": "PINNED_FETCH_OR_LOCAL",
+    "interface": "Native [B,336,C] -> [B,H,C]; FITS retains reconstruction objective; OLinear retains role-specific Q",
+    "source_redistributed": false
+  },
+  "DLINEAR": {
+    "name": "DLINEAR",
+    "source_key": "LTSF",
+    "repository": "https://github.com/cure-lab/LTSF-Linear",
+    "paper_title": "Are Transformers Effective for Time Series Forecasting?",
+    "paper_url": "https://arxiv.org/abs/2205.13504",
+    "commit": "0c113668a3b88c4c4ee586b8c5ec3e539c4de5a6",
+    "module_relative": "models/DLinear.py",
+    "module_SHA256": "0893b53cb6473d6bdca7aeca514cb3ee12efa6df227c29c4469571c9711451cc",
+    "license": "Apache-2.0",
+    "license_sources": [
+      "https://github.com/cure-lab/LTSF-Linear/blob/0c113668a3b88c4c4ee586b8c5ec3e539c4de5a6/LICENSE"
+    ],
+    "mode": "PINNED_FETCH_OR_LOCAL",
+    "interface": "Native [B,336,C] -> [B,H,C]; FITS retains reconstruction objective; OLinear retains role-specific Q",
+    "source_redistributed": false
+  },
+  "FITS": {
+    "name": "FITS",
+    "source_key": "FITS",
+    "repository": "https://github.com/VEWOXIC/FITS",
+    "paper_title": "FITS: Modeling Time Series with 10k parameters",
+    "paper_url": "https://arxiv.org/abs/2307.03756",
+    "commit": "d040bb015b6299da26d879b90dd19c80fb72c160",
+    "module_relative": "models/FITS.py",
+    "module_SHA256": "11c28af651bada1ba3e1e19c1cec1e835cc4b974d75da27df7b84d322096c90c",
+    "license": "Apache-2.0",
+    "license_sources": [
+      "https://github.com/VEWOXIC/FITS/blob/d040bb015b6299da26d879b90dd19c80fb72c160/LICENSE"
+    ],
+    "mode": "PINNED_FETCH_OR_LOCAL",
+    "interface": "Native [B,336,C] -> [B,H,C]; FITS retains reconstruction objective; OLinear retains role-specific Q",
+    "source_redistributed": false
+  },
+  "PATCHTST": {
+    "name": "PATCHTST",
+    "source_key": "PATCHTST",
+    "repository": "https://github.com/yuqinie98/PatchTST",
+    "paper_title": "A Time Series is Worth 64 Words: Long-term Forecasting with Transformers",
+    "paper_url": "https://arxiv.org/abs/2211.14730",
+    "commit": "204c21efe0b39603ad6e2ca640ef5896646ab1a9",
+    "module_relative": "PatchTST_supervised/models/PatchTST.py",
+    "module_SHA256": "49d8bb865e1226d6338842f4b33c4bc6992cefb048dc2a4a5a8c410ca708586b",
+    "license": "Apache-2.0",
+    "license_sources": [
+      "https://github.com/yuqinie98/PatchTST/blob/204c21efe0b39603ad6e2ca640ef5896646ab1a9/LICENSE"
+    ],
+    "mode": "PINNED_FETCH_OR_LOCAL",
+    "interface": "Native [B,336,C] -> [B,H,C]; FITS retains reconstruction objective; OLinear retains role-specific Q",
+    "source_redistributed": false
+  },
+  "ITRANSFORMER": {
+    "name": "ITRANSFORMER",
+    "source_key": "ITRANSFORMER",
+    "repository": "https://github.com/thuml/iTransformer",
+    "paper_title": "iTransformer: Inverted Transformers Are Effective for Time Series Forecasting",
+    "paper_url": "https://arxiv.org/abs/2310.06625",
+    "commit": "c2426e68ca13f74aaec08045c5c724d8ad328124",
+    "module_relative": "model/iTransformer.py",
+    "module_SHA256": "6f34777a5a12c253a293f79e7e1fd5b6f79ac100b443951e051e269e7e2542db",
+    "license": "MIT",
+    "license_sources": [
+      "https://github.com/thuml/iTransformer/blob/c2426e68ca13f74aaec08045c5c724d8ad328124/LICENSE"
+    ],
+    "mode": "PINNED_FETCH_OR_LOCAL",
+    "interface": "Native [B,336,C] -> [B,H,C]; FITS retains reconstruction objective; OLinear retains role-specific Q",
+    "source_redistributed": false
+  },
+  "SIGMA": {
+    "name": "SIGMA",
+    "source_key": "SIGMA",
+    "repository": "https://github.com/cheonwoolee/SiGMA",
+    "paper_title": "Generalizing Multi-Scale Time-Series Modeling with a Single Operator",
+    "paper_url": "https://proceedings.mlr.press/v306/lee26al.html",
+    "commit": "b4ac7c967f4a873c6908978230485125f71f6419",
+    "module_relative": "models/SiGMA.py",
+    "module_SHA256": "409627a8005f39cef59bc78f4932fb4cca49e4b7a403285be4a4c904fe06e213",
+    "license": "MIT",
+    "license_sources": [
+      "https://github.com/cheonwoolee/SiGMA/blob/b4ac7c967f4a873c6908978230485125f71f6419/LICENSE"
+    ],
+    "mode": "PINNED_FETCH_OR_LOCAL",
+    "interface": "Native [B,336,C] -> [B,H,C]; FITS retains reconstruction objective; OLinear retains role-specific Q",
+    "source_redistributed": false
+  },
+  "TIMEMIXER": {
+    "name": "TIMEMIXER",
+    "source_key": "TIMEMIXER",
+    "repository": "https://github.com/kwuking/TimeMixer",
+    "paper_title": "TimeMixer: Decomposable Multiscale Mixing for Time Series Forecasting",
+    "paper_url": "https://arxiv.org/abs/2405.14616",
+    "commit": "e24610583b36fdd8c76cc17a8df4e65759a5f460",
+    "module_relative": "models/TimeMixer.py",
+    "module_SHA256": "817d62f4aac54c8566e560f6d3785856e31c8ee51460279ee3d0a4823f11d4be",
+    "license": "Apache-2.0",
+    "license_sources": [
+      "https://github.com/kwuking/TimeMixer/blob/e24610583b36fdd8c76cc17a8df4e65759a5f460/LICENSE"
+    ],
+    "mode": "PINNED_FETCH_OR_LOCAL",
+    "interface": "Native [B,336,C] -> [B,H,C]; FITS retains reconstruction objective; OLinear retains role-specific Q",
+    "source_redistributed": false
+  },
+  "OLINEAR": {
+    "name": "OLINEAR",
+    "source_key": "OLINEAR",
+    "repository": "https://github.com/jackyue1994/OLinear",
+    "paper_title": "OLinear: A Linear Model for Time Series Forecasting in Orthogonally Transformed Domain",
+    "paper_url": "https://arxiv.org/abs/2505.08550",
+    "commit": "f168e01a3e0e316ad98330b5e77afed1f77b0af5",
+    "module_relative": "model/OLinear.py",
+    "module_SHA256": "d7b08d7e1a09a732adef03ed40fe956d284a6b5f221a3be8e11bc018bb48b457",
+    "license": "NO_EXPLICIT_LICENSE_FOUND",
+    "license_sources": [],
+    "mode": "USER_SUPPLIED_ONLY",
+    "interface": "Native [B,336,C] -> [B,H,C]; FITS retains reconstruction objective; OLinear retains role-specific Q",
+    "source_redistributed": false
+  }
+}

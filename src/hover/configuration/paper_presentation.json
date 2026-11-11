@@ -1,0 +1,211 @@
+{
+  "version": "BODY_LAYERED_SIMPLE_SCHEME_B_V1",
+  "scientific_archive_unchanged": true,
+  "new_fits_authorized": 0,
+  "panels": {
+    "A": {
+      "tier": "main",
+      "stage": "A",
+      "reference": "main_DEV_seeds.csv",
+      "format": "main_csv",
+      "datasets": [
+        "ETTh1",
+        "ETTh2",
+        "ETTm1",
+        "ETTm2",
+        "ECL",
+        "Solar",
+        "Traffic",
+        "Exchange",
+        "PEMS03",
+        "PEMS04",
+        "PEMS07",
+        "PEMS08"
+      ],
+      "systems": [
+        "NLINEAR_STRONG",
+        "DLINEAR",
+        "FITS",
+        "PATCHTST",
+        "ITRANSFORMER",
+        "SIGMA",
+        "TIMEMIXER",
+        "OLINEAR",
+        "NLINEAR_HOVER",
+        "OLINEAR_HOVER"
+      ],
+      "horizons": [
+        96
+      ],
+      "records": 600
+    },
+    "Table2": {
+      "tier": "main",
+      "stage": "Table2",
+      "reference": "cross_backbone_DEV_records.json",
+      "format": "json",
+      "datasets": [
+        "ECL",
+        "Solar",
+        "PEMS03"
+      ],
+      "backbones": [
+        "NLINEAR_PAIRED",
+        "OLINEAR",
+        "DLINEAR",
+        "FITS",
+        "ITRANSFORMER"
+      ],
+      "arms": [
+        "FROZEN",
+        "HOVER"
+      ],
+      "horizons": [
+        96
+      ],
+      "records": 150,
+      "display_backbone_order": [
+        "NLINEAR_PAIRED",
+        "DLINEAR",
+        "FITS",
+        "ITRANSFORMER",
+        "OLINEAR"
+      ]
+    },
+    "Capacity": {
+      "tier": "auxiliary_methodological_control",
+      "stage": "Table2",
+      "reference": "cross_backbone_DEV_records.json",
+      "format": "json",
+      "datasets": [
+        "ECL",
+        "Solar",
+        "PEMS03"
+      ],
+      "backbones": [
+        "NLINEAR_PAIRED",
+        "DLINEAR"
+      ],
+      "arms": [
+        "FROZEN",
+        "SIMPLE",
+        "HOVER"
+      ],
+      "horizons": [
+        96
+      ],
+      "records": 90,
+      "selection_basis": "Original P3 paired NLinear mechanism anchor and DLinear trend/seasonal linear predictor; fixed before presentation, not selected by observed Simple comparisons",
+      "table_number": "PENDING_MANUSCRIPT_ALIGNMENT"
+    },
+    "B": {
+      "tier": "main_mechanism",
+      "stage": "B",
+      "reference": "ablation_DEV_seeds.csv",
+      "format": "ablation_csv",
+      "datasets": [
+        "ETTh1",
+        "ETTh2",
+        "ETTm1",
+        "ETTm2",
+        "ECL",
+        "Solar",
+        "Traffic",
+        "Exchange",
+        "PEMS03",
+        "PEMS04",
+        "PEMS07",
+        "PEMS08"
+      ],
+      "systems": [
+        "HOVER",
+        "history_only",
+        "no_history_direct",
+        "concatenation",
+        "history_condition_replacement"
+      ],
+      "horizons": [
+        96
+      ],
+      "records": 300,
+      "existing_control_records": 240,
+      "reused_Full_HOVER_records": 60
+    },
+    "C": {
+      "tier": "main",
+      "stage": "C",
+      "reference": "horizon_accepted_DEV_records.json",
+      "format": "json",
+      "datasets": [
+        "ETTm1",
+        "ECL",
+        "Solar",
+        "PEMS03"
+      ],
+      "systems": [
+        "FROZEN",
+        "HOVER"
+      ],
+      "horizons_by_dataset": {
+        "ETTm1": [
+          96,
+          192,
+          336,
+          720
+        ],
+        "ECL": [
+          96,
+          192,
+          336,
+          720
+        ],
+        "Solar": [
+          96,
+          192,
+          336,
+          720
+        ],
+        "PEMS03": [
+          12,
+          24,
+          48,
+          96
+        ]
+      },
+      "records": 160,
+      "requires_complete_C_acceptance": true,
+      "archive_records": 240
+    }
+  },
+  "seeds": [
+    951,
+    952,
+    953,
+    954,
+    955
+  ],
+  "metrics": [
+    "MSE",
+    "MAE"
+  ],
+  "forbidden_claim": "Universal superiority to Simple across tasks, horizons or backbones",
+  "TEST_access": false,
+  "narrative_version": "GENERIC_HOVER_DUAL_BACKBONE_NARRATIVE_V1",
+  "method_scope": "Generic correction of frozen multivariate time-series predictors",
+  "narrative_roles": {
+    "NLINEAR_PAIRED": [
+      "same-seed relative gains",
+      "HRP/FCRP mechanisms",
+      "representative capacity control"
+    ],
+    "OLINEAR": [
+      "adaptation to a lower-error native predictor",
+      "competitive final accuracy",
+      "forecast-horizon evaluation"
+    ]
+  },
+  "figures": {
+    "Figure1d": "configuration/figure1d_p3_nlinear.json",
+    "Figure2": "APPROVED_OVERALL_STRUCTURE_UNCHANGED"
+  }
+}

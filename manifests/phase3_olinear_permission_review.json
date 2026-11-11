@@ -1,0 +1,17 @@
+{
+  "checked_on": "2026-11-08",
+  "repository": "https://github.com/jackyue1994/OLinear",
+  "commit": "f168e01a3e0e316ad98330b5e77afed1f77b0af5",
+  "repo_license_field": null,
+  "frozen_tree_license_paths": [],
+  "grant_established": false,
+  "contact_sent": false,
+  "source_redistributed": false,
+  "source_header_review": "Pinned Python/Markdown only; no data files read",
+  "ancillary_upstream_notices": [
+    "data_provider/m4.py",
+    "utils/losses.py",
+    "utils/timefeatures.py"
+  ],
+  "ancillary_notices_extend_to_OLinear": false
+}

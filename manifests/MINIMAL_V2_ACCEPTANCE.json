@@ -1,0 +1,27 @@
+{
+  "status": "BLOCKED",
+  "version": "0.4.0",
+  "scheme": "C_ALL_EIGHT_BACKBONES_EXTERNAL",
+  "CPU": "PASS",
+  "CLI": "PASS_17",
+  "eight_models_external": "PASS_9_IDENTITY_CASES",
+  "GPU_new_runs": 0,
+  "GPU_baseline_coverage": "CONDITIONAL_WITH_EXACT_CPU_AND_CHECKPOINT_EQUIVALENCE",
+  "TEST_access": false,
+  "GitHub_pushed": false,
+  "author_license_approved": false,
+  "security_scan_findings": [],
+  "comparison": {
+    "old_files": 95,
+    "new_files_before_inventory": 94,
+    "old_python_files": 23,
+    "new_python_files": 19,
+    "old_python_lines": 2542,
+    "new_python_lines": 2400,
+    "old_uncompressed_bytes": 2349001,
+    "new_uncompressed_bytes_before_inventory": 2355774,
+    "old_third_party_model_python_files": 4,
+    "new_third_party_model_python_files": 0,
+    "note": "More derived paper tables/source registry metadata can add files;scientific completeness is preserved. Source count includes tests and own wrappers."
+  }
+}
