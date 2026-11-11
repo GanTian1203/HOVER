@@ -13,10 +13,7 @@ reference records for a paper panel.
 | `C` | Frozen OLinear and HOVER across four horizons per dataset | [160 paper records](../results/presentation/C_main_accepted_DEV_records.json) from the [240-record three-arm archive](../results/reference/horizon_accepted_DEV_records.json) |
 
 Each formal result uses seeds 951–955. The main table uses Strong NLinear as a
-standalone baseline and P3 paired NLinear for NLinear+HOVER. The latter also
-supplies the denominator for the same-seed gains in Figure 1(d). The
-[Figure 1(d) data](../results/figure1d) cover ECL, Solar, and PEMS03. The
-separately rendered R15 figure uses these values.
+standalone baseline and P3 paired NLinear for NLinear+HOVER. See the [final figure and table index](../PAPER_RESULTS_INDEX.md) for paper numbering.
 
 ## Recipes
 

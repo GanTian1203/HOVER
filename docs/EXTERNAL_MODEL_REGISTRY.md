@@ -12,3 +12,7 @@
 | OLINEAR | [OLinear: A Linear Model for Time Series Forecasting in Orthogonally Transformed Domain](https://arxiv.org/abs/2505.08550) | [official](https://github.com/jackyue1994/OLinear) | f168e01a3e0e316ad98330b5e77afed1f77b0af5 | model/OLinear.py / d7b08d7e1a09a732adef03ed40fe956d284a6b5f221a3be8e11bc018bb48b457 | NO_EXPLICIT_LICENSE_FOUND |
 
 Recursive pinned file hashes and upstream license-file locations are in configuration/sources.json. All eight implementations are external;none is redistributed here.
+
+## PostY output adapter
+
+The DLinear comparison uses the official offline multiplicative PostY module from the pinned [Anoise/Adapter snapshot](https://github.com/Anoise/Adapter/tree/0add06ea7b4d2e0a84c364a8be72eef2676a92f2). No explicit license file was found in the inspected snapshot. Obtain the source separately under its applicable terms. The [configuration and source hashes](../supplementary/posty/protocol.json) identify the module and scheduler used in the experiment.

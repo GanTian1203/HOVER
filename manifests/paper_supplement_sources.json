@@ -1,0 +1,215 @@
+{
+  "paper_package_sha256": "6bd2b865b3ec5327f5ca689d22105912f27380e7af49729e2a30031cc4f08bd3",
+  "files": {
+    "paper/HOVER.pdf": {
+      "sha256": "29858e41a3ecca372e1fcd253603d7ed7c805a8980e45329d88ad17e98bdb376",
+      "source": "Prepublication IEEE layout candidate"
+    },
+    "assets/figure1.pdf": {
+      "sha256": "2f26818884fa66ec83bb509ab2762c4c65c8c95ebfaf362b4cd3efa3419386eb",
+      "source": "Manuscript Figure 1"
+    },
+    "assets/figure2.pdf": {
+      "sha256": "17e6f95332bff40178bd9a49026fc2942381d8b7a8e960d46dbfbba68668b25c",
+      "source": "Manuscript Figure 2"
+    },
+    "assets/figure2.png": {
+      "sha256": "4cf2f2f6910bfbe75afc006ff5b0f191f0d47b7cd020df1e50a972d3f60a97ef",
+      "source": "210 dpi raster of assets/figure2.pdf"
+    },
+    "assets/figure3.pdf": {
+      "sha256": "ca2ec6fa24bded4f7199e66d5c8f8162167dd503ee40c82b8d6989a35dcc55d5",
+      "source": "Manuscript Figure 3"
+    },
+    "assets/figure4.pdf": {
+      "sha256": "75c166271641f7afa46a02d7ee94c7f13ef81dcdbe2b4f445270c130ed68b83b",
+      "source": "Manuscript Figure 4"
+    },
+    "assets/figure4.png": {
+      "sha256": "c35ffd84cba3064172334b890948cd39c2dfdffcf484019c9103d65ac69060d3",
+      "source": "210 dpi raster of assets/figure4.pdf"
+    },
+    "assets/figure5.pdf": {
+      "sha256": "1fe3f39eba69af21847d156f414501ec57695e641766b79e8742f21dde3e4f99",
+      "source": "Manuscript Figure 5"
+    },
+    "assets/figure6.pdf": {
+      "sha256": "c4e3545692bc2419decddbe7cb421bd1ca353279b87aac635d1d2ac3778d34cd",
+      "source": "Manuscript Figure 6"
+    },
+    "assets/figure6.png": {
+      "sha256": "53f199c2ac7347e966e5e365e6df7a5804f2212bfc122106e5111970bfb6a3e9",
+      "source": "210 dpi raster of assets/figure6.pdf"
+    },
+    "assets/figure7.pdf": {
+      "sha256": "d3692103c61459d452b8aba5008a5a8432a5d28dd23be7104fdbc7bc71913bd7",
+      "source": "Manuscript Figure 7"
+    },
+    "assets/figure7.png": {
+      "sha256": "f91d537b3470f1fd61af3d2a02486ffe6e040fdc026c240cd959a296c6f21ed7",
+      "source": "210 dpi raster of assets/figure7.pdf"
+    },
+    "supplementary/paper-tables/table1.tex": {
+      "sha256": "bc67d0fba904654f0fa99ff2a62854feb8964f7697fdc35bd78276b98a17c184",
+      "source": "Manuscript table fragment"
+    },
+    "supplementary/paper-tables/table2.tex": {
+      "sha256": "3a5080f565b158870f6791ce057e7b7520c97cbbf644427fdbba0856c9cfd8d6",
+      "source": "Manuscript table fragment"
+    },
+    "supplementary/paper-tables/table3.tex": {
+      "sha256": "e53f20701befe2fab8cc81460f59c81452e5a488fe974602a2ff52a1cadf151a",
+      "source": "Manuscript table fragment"
+    },
+    "supplementary/paper-tables/table4.tex": {
+      "sha256": "6d81014b85667a6135880a5c2f30e832098460972830e2afd26aed905ccdaa72",
+      "source": "Manuscript table fragment"
+    },
+    "supplementary/paper-tables/table5.tex": {
+      "sha256": "0088ed272ccafd5eb1db93afa612cccf87f951a409bd37d64ad707997a550303",
+      "source": "Manuscript table fragment"
+    },
+    "supplementary/paper-tables/table_test.tex": {
+      "sha256": "b60204ca2d3f44cd00e013d1320e7ba009d04184f98b529ce57bdc705d677577",
+      "source": "Table VI, prepublication IEEE two-column layout; original data and captions"
+    },
+    "supplementary/test/TEST_system_metrics.csv": {
+      "sha256": "1716c7c93b9af75874247608cc580cc294f9adec301ff469e712344207b56b61",
+      "source": "TEST_system_metrics.csv"
+    },
+    "supplementary/test/TEST_paired_seeds.csv": {
+      "sha256": "ed1ceca1c3c88cfe33fbc7b0585f6c4f74061c03929cc5b1187432fadbf7a624",
+      "source": "TEST_paired_seeds.csv"
+    },
+    "supplementary/test/TEST_five_seed_summary.csv": {
+      "sha256": "722347716eacabfdeeaf7b43b1137da92af2eabefb7f0479e1fa1bcb0609a843",
+      "source": "TEST_five_seed_summary.csv"
+    },
+    "supplementary/test/TEST_independent_artifact_check.json": {
+      "sha256": "6102596da47ab7b102bbbb5f888b3c723654a69475876410972e842deccb23f5",
+      "source": "TEST_independent_artifact_check.json"
+    },
+    "supplementary/posty/DEV_seed_results.csv": {
+      "sha256": "09ba3096619b06076ea9eb4c7120514cc2a085564e5735c991116721f11879d7",
+      "source": "DEV_seed_results.csv"
+    },
+    "supplementary/posty/DEV_five_seed_summary.csv": {
+      "sha256": "25b7fa2e66f1fcac687cdb2862f591ce5ea5984677be488494f2d0af9747833a",
+      "source": "DEV_five_seed_summary.csv"
+    },
+    "supplementary/posty/independent_verification.json": {
+      "sha256": "264279918fb2299c1a0c260f3cff6a0356983630177db932b0a5698831535afe",
+      "source": "independent_verification.json"
+    },
+    "supplementary/posty/FIG7_DLINEAR_TEST_RESULTS.csv": {
+      "sha256": "6522f27adfef1efbf93e80fb576160904762e5af0c4fe05a37a9f02d01d9f950",
+      "source": "FIG7_DLINEAR_TEST_RESULTS.csv"
+    },
+    "supplementary/posty/FIG7_DLINEAR_TEST_FIVE_SEED_SUMMARY.csv": {
+      "sha256": "6f2fa793cac721712d5836f78dd9c8e7f9af12bb97515353b573d3654dd879c9",
+      "source": "FIG7_DLINEAR_TEST_FIVE_SEED_SUMMARY.csv"
+    },
+    "supplementary/trajectories/FIG7_BRANCH_SEGMENT_FEATURES.csv": {
+      "sha256": "28bb20f1df01750cce7b61832b3b3ba174ab20c73b0098348511bec9aad4ad0a",
+      "source": "FIG7_BRANCH_SEGMENT_FEATURES.csv"
+    },
+    "supplementary/trajectories/FIG7_BRANCH_RECONSTRUCTION.json": {
+      "sha256": "9c0de3b3bba36100c3d4aa17c310d598b905f4a09a9401659618e830346d15d8",
+      "source": "FIG7_BRANCH_RECONSTRUCTION.json"
+    },
+    "supplementary/trajectories/FIG7_CANDIDATE_SELECTION.csv": {
+      "sha256": "3abb5ea941f3d9ec578eb9a60512b040541f34e0cd3718a3a9424557cd001e45",
+      "source": "FIG7_CANDIDATE_SELECTION.csv"
+    },
+    "supplementary/trajectories/FIG7_DEV_SYSTEM_RESULTS.csv": {
+      "sha256": "f562f477df4d0601abd61cb36d66ce383cc73c0c17170a7b23f942e757b03c05",
+      "source": "FIG7_DEV_SYSTEM_RESULTS.csv"
+    },
+    "supplementary/trajectories/FIG7_FIVE_SEED_SEGMENT_SUMMARY.csv": {
+      "sha256": "a7670069d3fbd770ebf2d908295eeb2b4b17b3b9f78982461a80d2c75d495376",
+      "source": "FIG7_FIVE_SEED_SEGMENT_SUMMARY.csv"
+    },
+    "supplementary/trajectories/FIG7_INDEPENDENT_VERIFICATION.json": {
+      "sha256": "e2cda28be58355c5220f5e2505b2594ca5e5b964d2dc8199512afcc4f6e58cc8",
+      "source": "FIG7_INDEPENDENT_VERIFICATION.json"
+    },
+    "supplementary/trajectories/FIG7_MORPHOLOGY_FIVE_SEED_SUMMARY.csv": {
+      "sha256": "6f06f79572491c70cbc930ea976d60e980c03125bc1bf0adb7a688c73942bb3b",
+      "source": "FIG7_MORPHOLOGY_FIVE_SEED_SUMMARY.csv"
+    },
+    "supplementary/trajectories/FIG7_MORPHOLOGY_SUMMARY.csv": {
+      "sha256": "e25469289820f16dd9eb58d2fa1a7b0e1947dbc4db5139b75085fe8e79a1d55a",
+      "source": "FIG7_MORPHOLOGY_SUMMARY.csv"
+    },
+    "supplementary/trajectories/FIG7_SEED_CONSISTENCY.csv": {
+      "sha256": "4e5d74abf95752350d0523e969987951426dbc42b2d7423f2cf13e921a2b9d00",
+      "source": "FIG7_SEED_CONSISTENCY.csv"
+    },
+    "supplementary/trajectories/FIG7_WINDOW_SEGMENT_SUMMARY.csv": {
+      "sha256": "ad244b56b4fc5e331419485a05620465c33de4c7a8832e4bba49c4e8cee0704c",
+      "source": "FIG7_WINDOW_SEGMENT_SUMMARY.csv"
+    },
+    "supplementary/trajectories/selected_cases.json": {
+      "sha256": "43c96a396fe27a20fb44c2ac6b9b62ed08a7cdaa64e957de1f26eccf3b5a6c56",
+      "source": "selected_cases.json"
+    },
+    "supplementary/trajectories/Figure7_Local_Views.pdf": {
+      "sha256": "df4c4d76d538d29002d866d2602affd1ebab7f18cf1571f72896d88ab9ff343c",
+      "source": "Figure7_Local_Views.pdf"
+    },
+    "supplementary/trajectories/Figure7_Trajectories.svg": {
+      "sha256": "e98e4fbadf3b5dbccb2ccbb78ef0166ea367f505423a4adb45d6336669392d95",
+      "source": "Figure7_Trajectories.svg"
+    },
+    "supplementary/trajectories/draw_figure7.py": {
+      "sha256": "a6b11297e23f42442b8679b56ac2a015e3476692666d8bdf360f5dd29712d70f",
+      "source": "Figure 7 rendering with explicitly supplied verified data"
+    },
+    "supplementary/trajectories/draw_figure6.py": {
+      "sha256": "f117e123b47289c310a0c7d6460bf3e1b50d1e651fcc0caf2bdde121430c1007",
+      "source": "Figure 6 rendering with explicitly supplied verified data"
+    },
+    "supplementary/trajectories/single_style.py": {
+      "sha256": "3c31cf15b8dfc7f1599c21a6a390614a76fbda4242934a11ab9c526c167dce01",
+      "source": "Figure 6 plot style with explicit output directory"
+    },
+    "supplementary/trajectories/figure6_source_manifest.json": {
+      "sha256": "140363e9c38c3f29170f7f4179645effa84d6bc146cd33c378828ec16833eecb",
+      "source": "Figure 6 manifest with local paths omitted"
+    },
+    "supplementary/posty/protocol.json": {
+      "sha256": "77bb0586d02fbe4dd7d7731e926f3f44430e523f0203da45b443f121f2bbdfbe",
+      "source": "PostY protocol lock configuration"
+    },
+    "supplementary/trajectories/figure7_selected_forecasts.csv": {
+      "sha256": "54a9eea1b60de5f01ee9ea6894478a48cfdf2265baeb2b8cb78ce23da6d93f89",
+      "source": "FIG7_SELECTED_TRAJECTORIES.npz, forecast and branch arrays"
+    },
+    "supplementary/trajectories/figure6_selected_forecasts.csv": {
+      "sha256": "89ac0fc96a99393e5b60203841aa06348861c4cc979653ca21a7d8bd2578e966",
+      "source": "figure6_case_data.csv, forecast rows and outputs"
+    },
+    "supplementary/test/test_holdout.py": {
+      "sha256": "8406e941dc20ad1b52cf34319f0ce2af67e833f808bdea9382381c0980e9b20b",
+      "source": "Portable Table VI evaluator from the accepted manuscript evidence package"
+    },
+    "supplementary/test/test_protocol.json": {
+      "sha256": "af090a37a0bf957598f3ba378fee7213eb052c877691b1e09dc08b1fbe6a827a",
+      "source": "Table VI locked dataset and checkpoint identities"
+    },
+    "supplementary/trajectories/figure6_window_scores.csv": {
+      "sha256": "38136e4fe7da3f4d1d40f33a397c3133a9f7398179fd2a1197bc44ff0d964e05",
+      "source": "Recomputed from the accepted Figure 6 window evidence"
+    },
+    "supplementary/trajectories/waveform_identity.json": {
+      "sha256": "ae28843f688951c06c923c5ce924951a5897295b9a69bc62f8d85ef2e14f8cec",
+      "source": "Standardized prefix hashes from the accepted TRAIN/DEV caches"
+    },
+    "supplementary/trajectories/figure7_checkpoint_identity.json": {
+      "sha256": "ebbfdcd354769e46b2305d1f35c5af53c9a9c7e656b1af4c15f9bbd2a0c9a501",
+      "source": "Seed 951 checkpoint digests from the approved Figure 7 DLinear scope"
+    }
+  },
+  "prior_paper_package_sha256": "dbb684a654a4bfeb30616eafd5fcdb4ce37386cf41f597496976137413482c3f",
+  "prior_narrative_latex_sha256": "fc4ad144e63467cedae60956a4f45b637bc4d869a65d78e9fde800ae06d90623"
+}
