@@ -1,0 +1,35 @@
+\begin{table}[t]
+\caption{Paired refinement across five frozen forecasters and three datasets (five-seed DEV means).}
+\label{tab:cross}
+\centering
+\begingroup
+\setlength{\tabcolsep}{0.9pt}
+\renewcommand{\arraystretch}{1.20}
+\fontsize{7.2}{8.6}\selectfont
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}ll|rr|rr|rr@{}}
+\toprule
+\multirow{2}{*}{Dataset} & \multirow{2}{*}{Backbone} & \multicolumn{2}{c|}{Frozen} & \multicolumn{2}{c|}{HOVER} & \multicolumn{2}{c}{Gain (\%)} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(lr){7-8}
+ &  & MSE & MAE & MSE & MAE & MSE & MAE \\
+\midrule
+ECL & NLinear & 0.12036 & 0.21220 & 0.11434 & 0.20585 & +5.00 & +2.99 \\
+ & DLinear & 0.11951 & 0.21389 & 0.11380 & 0.20789 & +4.78 & +2.80 \\
+ & FITS & 0.12537 & 0.22236 & 0.11518 & 0.20792 & +8.12 & +6.49 \\
+ & iTrans. & 0.11153 & 0.20435 & 0.11053 & 0.20332 & +0.89 & +0.51 \\
+ & OLinear & 0.10340 & 0.19160 & 0.10297 & 0.19155 & +0.42 & +0.02 \\
+\midrule
+Solar & NLinear & 0.18761 & 0.23426 & 0.15505 & 0.20951 & +17.35 & +10.57 \\
+ & DLinear & 0.17539 & 0.24164 & 0.14924 & 0.21009 & +14.91 & +13.06 \\
+ & FITS & 0.18844 & 0.23802 & 0.15531 & 0.20866 & +17.58 & +12.34 \\
+ & iTrans. & 0.16053 & 0.22941 & 0.15119 & 0.21390 & +5.82 & +6.76 \\
+ & OLinear & 0.14328 & 0.18122 & 0.14003 & 0.18597 & +2.27 & -2.62 \\
+\midrule
+PEMS03 & NLinear & 0.17473 & 0.27358 & 0.09874 & 0.21014 & +43.49 & +23.19 \\
+ & DLinear & 0.17091 & 0.28130 & 0.09694 & 0.21277 & +43.28 & +24.36 \\
+ & FITS & 0.17606 & 0.27448 & 0.10098 & 0.21264 & +42.64 & +22.53 \\
+ & iTrans. & 0.08226 & 0.18948 & 0.08044 & 0.18702 & +2.21 & +1.30 \\
+ & OLinear & 0.05941 & 0.16129 & 0.05888 & 0.16017 & +0.88 & +0.69 \\
+\bottomrule
+\end{tabular*}
+\endgroup
+\end{table}

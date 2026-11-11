@@ -1,0 +1,40 @@
+% Requires: \usepackage{array,booktabs,multirow,xcolor}
+% Preamble for Table I (only):
+% \newcommand{\hovbest}[1]{\textcolor{red!75!black}{\textbf{#1}}}
+% \newcommand{\hovsecond}[1]{\textcolor{blue!75!black}{\underline{#1}}}
+\begin{table*}[t]
+\caption{Performance of ten forecasting systems on twelve datasets (five-seed DEV means; lower is better).}
+\label{tab:main}
+\centering
+\begingroup
+\setlength{\tabcolsep}{1.35pt}
+\renewcommand{\arraystretch}{1.15}
+\fontsize{6.50}{7.9}\selectfont
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l|rr|rr|rr|rr|rr|rr|rr|rr|rr|rr@{}}
+\toprule
+\multirow{3}{*}{Dataset} & \multicolumn{4}{c|}{\textbf{HOVER (Ours)}} & \multicolumn{16}{c}{\textbf{Native forecasting systems}} \\
+\cmidrule(lr){2-5}\cmidrule(l){6-21}
+ & \multicolumn{2}{c|}{OL+H} & \multicolumn{2}{c|}{NL+H} & \multicolumn{2}{c|}{OLinear} & \multicolumn{2}{c|}{PatchTST} & \multicolumn{2}{c|}{iTrans.} & \multicolumn{2}{c|}{SiGMA} & \multicolumn{2}{c|}{T.Mixer} & \multicolumn{2}{c|}{NLinear$^{\dagger}$} & \multicolumn{2}{c|}{DLinear} & \multicolumn{2}{c}{FITS} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}\cmidrule(lr){10-11}\cmidrule(lr){12-13}\cmidrule(lr){14-15}\cmidrule(lr){16-17}\cmidrule(lr){18-19}\cmidrule(lr){20-21}
+ & MSE & MAE & MSE & MAE & MSE & MAE & MSE & MAE & MSE & MAE & MSE & MAE & MSE & MAE & MSE & MAE & MSE & MAE & MSE & MAE \\
+\midrule
+ETTh1 & 0.69503 & 0.55358 & \hovsecond{0.66005} & \hovsecond{0.54402} & 0.70877 & 0.56342 & 0.67281 & 0.55229 & 0.69312 & 0.56765 & 0.69206 & 0.55723 & 0.72111 & 0.57772 & 0.66423 & 0.54626 & \hovbest{0.64742} & \hovbest{0.54123} & 0.68139 & 0.56195 \\
+ETTh2 & 0.21527 & 0.31851 & \hovbest{0.20352} & \hovbest{0.31118} & 0.21811 & 0.32112 & 0.21099 & 0.31734 & 0.23161 & 0.33491 & 0.22334 & 0.32623 & 0.22183 & 0.32606 & \hovsecond{0.20530} & \hovsecond{0.31188} & 0.21714 & 0.32517 & 0.20944 & 0.31597 \\
+ETTm1 & \hovbest{0.35416} & \hovbest{0.38880} & 0.36098 & 0.39636 & \hovsecond{0.35435} & \hovsecond{0.38899} & 0.36618 & 0.40167 & 0.37200 & 0.40895 & 0.38624 & 0.41639 & 0.37686 & 0.40872 & 0.38591 & 0.40738 & 0.37875 & 0.40619 & 0.39060 & 0.41021 \\
+ETTm2 & \hovsecond{0.11574} & \hovbest{0.23142} & \hovbest{0.11565} & 0.23272 & 0.11636 & \hovsecond{0.23260} & 0.11807 & 0.23514 & 0.12939 & 0.25141 & 0.12195 & 0.23859 & 0.12125 & 0.23968 & 0.11602 & 0.23367 & 0.11737 & 0.23692 & 0.11651 & 0.23441 \\
+ECL & \hovbest{0.10297} & \hovbest{0.19155} & 0.11434 & 0.20585 & \hovsecond{0.10340} & \hovsecond{0.19160} & 0.11485 & 0.20693 & 0.11153 & 0.20435 & 0.11285 & 0.20518 & 0.11233 & 0.20726 & 0.12036 & 0.21220 & 0.11951 & 0.21389 & 0.12537 & 0.22236 \\
+Solar & \hovbest{0.14003} & \hovsecond{0.18597} & 0.15505 & 0.20951 & \hovsecond{0.14328} & \hovbest{0.18122} & 0.16071 & 0.23810 & 0.16053 & 0.22941 & 0.15072 & 0.21566 & 0.16131 & 0.22282 & 0.18761 & 0.23494 & 0.17539 & 0.24164 & 0.18844 & 0.23802 \\
+Traffic & \hovbest{0.29868} & \hovsecond{0.19653} & 0.32446 & 0.23167 & \hovsecond{0.30806} & \hovbest{0.19267} & 0.32913 & 0.23618 & 0.31344 & 0.23211 & 0.32751 & 0.23438 & 0.33342 & 0.25287 & 0.33622 & 0.24096 & 0.33884 & 0.24448 & 0.33939 & 0.24641 \\
+Exchange & 0.13475 & 0.25582 & 0.13003 & \hovsecond{0.24914} & 0.13322 & 0.25426 & \hovbest{0.12776} & 0.25241 & 0.14576 & 0.27193 & 0.14349 & 0.26655 & 0.14742 & 0.26933 & \hovsecond{0.12792} & \hovbest{0.24786} & 0.14540 & 0.26914 & 0.13587 & 0.26063 \\
+PEMS03 & \hovbest{0.05888} & \hovbest{0.16017} & 0.09874 & 0.21014 & \hovsecond{0.05941} & \hovsecond{0.16129} & 0.10266 & 0.21514 & 0.08226 & 0.18948 & 0.09390 & 0.20653 & 0.09723 & 0.21640 & 0.17471 & 0.27319 & 0.17091 & 0.28130 & 0.17606 & 0.27448 \\
+PEMS04 & \hovbest{0.08089} & \hovbest{0.17820} & 0.13173 & 0.23633 & \hovsecond{0.08193} & \hovsecond{0.18034} & 0.14034 & 0.24799 & 0.10349 & 0.21454 & 0.12931 & 0.23721 & 0.13878 & 0.25609 & 0.18631 & 0.27956 & 0.18045 & 0.28271 & 0.18808 & 0.28136 \\
+PEMS07 & \hovbest{0.09716} & \hovbest{0.17893} & 0.13900 & 0.23840 & \hovsecond{0.09776} & \hovsecond{0.18068} & 0.13507 & 0.23603 & 0.10103 & 0.20427 & 0.12367 & 0.22083 & 0.13624 & 0.24446 & 0.22466 & 0.30994 & 0.21656 & 0.31519 & 0.22704 & 0.31203 \\
+PEMS08 & \hovbest{0.19697} & \hovbest{0.20433} & 0.27024 & 0.25936 & \hovsecond{0.19783} & \hovsecond{0.20645} & 0.26282 & 0.26388 & 0.28933 & 0.27732 & 0.24036 & 0.24829 & 0.25843 & 0.25481 & 0.42945 & 0.34132 & 0.39591 & 0.33866 & 0.43672 & 0.35510 \\
+\midrule
+\textbf{1st Count} & \multicolumn{2}{c|}{\textbf{15}} & \multicolumn{2}{c|}{\textbf{3}} & \multicolumn{2}{c|}{\textbf{2}} & \multicolumn{2}{c|}{\textbf{1}} & \multicolumn{2}{c|}{\textbf{0}} & \multicolumn{2}{c|}{\textbf{0}} & \multicolumn{2}{c|}{\textbf{0}} & \multicolumn{2}{c|}{\textbf{1}} & \multicolumn{2}{c|}{\textbf{2}} & \multicolumn{2}{c}{\textbf{0}} \\
+\bottomrule
+\end{tabular*}
+\par\vspace{1.5pt}
+{\fontsize{7}{8.2}\selectfont\emph{Red bold/blue underline}: best/runner-up; \emph{1st Count}: wins in 24 comparisons; $^{\dagger}$: different NLinear training configuration.\par}
+\endgroup
+\end{table*}

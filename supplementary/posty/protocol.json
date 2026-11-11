@@ -1,0 +1,26 @@
+{
+  "config": {
+    "history": 336,
+    "horizon": 96,
+    "hidden": 512,
+    "delta": 0.2,
+    "batch": 64,
+    "clip": 0.01,
+    "lr": 0.0001,
+    "lradj": "type1",
+    "epochs": 10,
+    "patience": 3,
+    "optimizer": "Adam",
+    "objective": "MSE",
+    "validation_role": "DEV",
+    "seed_source": "existing paired DLinear formal seed identities",
+    "base_weight_updates": 0,
+    "TEST_access": false
+  },
+  "upstream_repo": "https://github.com/Anoise/Adapter",
+  "upstream_commit": "0add06ea7b4d2e0a84c364a8be72eef2676a92f2",
+  "upstream_model_SHA256": "5498b9a1640f71df6c3865fed4b4019e61f5c2a0a758cba3c17a9d8452712cba",
+  "upstream_schedule_SHA256": "20daf1341cff4e3944355f7df9c46347937e98eeb5bbc4bf43a30a192c43338a",
+  "program_SHA256": "567a884d5f810d1343e4dfd66519deff263e09e58f4ef483ba22e5fed3ceae4a",
+  "dev_reference_SHA256": "b2de82b25c8eb87d7ddce0b7c0a4ee3c012135f66955d06226f5a009139c5544"
+}

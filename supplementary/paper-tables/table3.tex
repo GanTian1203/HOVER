@@ -1,0 +1,26 @@
+\begin{table}[t]
+\caption{Capacity-matched paired controls; gains are relative to Simple (five-seed DEV means).}
+\label{tab:capacity}
+\centering
+\begingroup
+\setlength{\tabcolsep}{1.0pt}
+\renewcommand{\arraystretch}{1.23}
+\fontsize{6.2}{7.4}\selectfont
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}ll|rr|rr|rr|rr@{}}
+\toprule
+\multirow{2}{*}{Dataset} & \multirow{2}{*}{Backbone} & \multicolumn{2}{c|}{Frozen} & \multicolumn{2}{c|}{Simple} & \multicolumn{2}{c|}{HOVER} & \multicolumn{2}{c}{Gain (\%)} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(lr){7-8}\cmidrule(lr){9-10}
+ &  & MSE & MAE & MSE & MAE & MSE & MAE & MSE & MAE \\
+\midrule
+ECL & NLinear & 0.12036 & 0.21220 & 0.11486 & 0.20645 & 0.11434 & 0.20585 & +0.45 & +0.29 \\
+ & DLinear & 0.11951 & 0.21389 & 0.11435 & 0.20845 & 0.11380 & 0.20789 & +0.48 & +0.27 \\
+\midrule
+Solar & NLinear & 0.18761 & 0.23426 & 0.15622 & 0.21068 & 0.15505 & 0.20951 & +0.75 & +0.56 \\
+ & DLinear & 0.17539 & 0.24164 & 0.14843 & 0.20829 & 0.14924 & 0.21009 & -0.55 & -0.86 \\
+\midrule
+PEMS03 & NLinear & 0.17473 & 0.27358 & 0.10487 & 0.21647 & 0.09874 & 0.21014 & +5.85 & +2.93 \\
+ & DLinear & 0.17091 & 0.28130 & 0.10349 & 0.21875 & 0.09694 & 0.21277 & +6.33 & +2.73 \\
+\bottomrule
+\end{tabular*}
+\endgroup
+\end{table}

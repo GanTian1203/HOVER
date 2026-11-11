@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "qualified_system_evaluations": 80,
+  "qualified_paired_seeds": 40,
+  "complete_five_seed_groups": 8,
+  "expected_counts_rechecked": true,
+  "aggregate_metrics_recomputed": true,
+  "scope_sha256": "d9b5dfef8a53143fb63489db30217aecd2b4693c92b754883f8ccc84cf44b4d3",
+  "inference_only": true,
+  "published_signals": false
+}

@@ -1,0 +1,35 @@
+\begin{table*}[t]
+\caption{Twelve-task ablation of the paired frozen NLinear (five-seed DEV means).}
+\label{tab:ablation}
+\centering
+\begingroup
+\setlength{\tabcolsep}{5.0pt}
+\renewcommand{\arraystretch}{1.13}
+\fontsize{8.0}{9.4}\selectfont
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l|rr|rr|rr|rr|rr@{}}
+\toprule
+Task & \multicolumn{2}{c|}{Full HOVER} & \multicolumn{2}{c|}{Only HRP} & \multicolumn{2}{c|}{No HRP} & \multicolumn{2}{c|}{Additive} & \multicolumn{2}{c}{History-surrogate} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}\cmidrule(lr){10-11}
+ & MSE & MAE & MSE & MAE & MSE & MAE & MSE & MAE & MSE & MAE \\
+\midrule
+ETTh1 & 0.66005 & 0.54402 & 0.66539 & 0.54644 & 0.66023 & 0.54394 & 0.66561 & 0.54651 & 0.66164 & 0.54528 \\
+ETTh2 & 0.20352 & 0.31118 & 0.20514 & 0.31237 & 0.20387 & 0.31138 & 0.20418 & 0.31180 & 0.20562 & 0.31228 \\
+ETTm1 & 0.36098 & 0.39636 & 0.36270 & 0.39735 & 0.36105 & 0.39632 & 0.36128 & 0.39640 & 0.36162 & 0.39670 \\
+ETTm2 & 0.11565 & 0.23272 & 0.11568 & 0.23268 & 0.11569 & 0.23287 & 0.11547 & 0.23246 & 0.11562 & 0.23259 \\
+\addlinespace[2pt]
+ECL & 0.11434 & 0.20585 & 0.11497 & 0.20660 & 0.11440 & 0.20589 & 0.11483 & 0.20642 & 0.11462 & 0.20617 \\
+Solar & 0.15505 & 0.20951 & 0.15597 & 0.21128 & 0.15640 & 0.21143 & 0.15491 & 0.20989 & 0.15501 & 0.20994 \\
+Traffic & 0.32446 & 0.23167 & 0.32663 & 0.23388 & 0.32513 & 0.23222 & 0.32508 & 0.23261 & 0.32495 & 0.23227 \\
+Exchange & 0.13003 & 0.24914 & 0.12873 & 0.24814 & 0.12981 & 0.24892 & 0.12926 & 0.24870 & 0.12990 & 0.24973 \\
+\addlinespace[2pt]
+PEMS03 & 0.09874 & 0.21014 & 0.10308 & 0.21481 & 0.09751 & 0.20901 & 0.09780 & 0.20900 & 0.09815 & 0.20972 \\
+PEMS04 & 0.13173 & 0.23633 & 0.13588 & 0.24019 & 0.13232 & 0.23753 & 0.13262 & 0.23690 & 0.13139 & 0.23678 \\
+PEMS07 & 0.13900 & 0.23840 & 0.14363 & 0.24300 & 0.13874 & 0.23817 & 0.13913 & 0.23799 & 0.14012 & 0.23860 \\
+PEMS08 & 0.27024 & 0.25936 & 0.28006 & 0.26689 & 0.27227 & 0.26188 & 0.27049 & 0.25999 & 0.26949 & 0.25986 \\
+\midrule
+Full wins MSE & \multicolumn{2}{c|}{--} & \multicolumn{2}{c|}{11/12} & \multicolumn{2}{c|}{9/12} & \multicolumn{2}{c|}{8/12} & \multicolumn{2}{c}{6/12} \\
+Full wins MAE & \multicolumn{2}{c|}{--} & \multicolumn{2}{c|}{10/12} & \multicolumn{2}{c|}{7/12} & \multicolumn{2}{c|}{8/12} & \multicolumn{2}{c}{10/12} \\
+\bottomrule
+\end{tabular*}
+\endgroup
+\end{table*}

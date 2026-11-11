@@ -1,0 +1,82 @@
+{
+  "status": "READY",
+  "TEST_access": false,
+  "training_runs": 0,
+  "torch": "2.0.0+cu118",
+  "numpy": "1.23.5",
+  "device": "cpu",
+  "selector": "Fixed seed 951. Whole-window MSE gain ranks 50%, 35%, 65% in that order. Channel target SD >= .05 in accepted z units, RMS adjustment >= .03 target SD. Choose a positive channel within the visible-channel IQR nearest the median, ties by channel. Zoom the 24-step span with largest forecast-to-forecast squared separation.",
+  "results": [
+    {
+      "dataset": "ECL",
+      "backbone": "OLINEAR",
+      "seed": 951,
+      "channels": 321,
+      "history": 336,
+      "horizon": 96,
+      "role": "DEV",
+      "train_rows": [
+        0,
+        18412
+      ],
+      "dev_rows": [
+        18412,
+        21044
+      ],
+      "data_cache_SHA256": "0442213c8f2d737b7a64dc4deb89b995553fea09ac5be082a0365cd404a486d3",
+      "scale": "accepted full-TRAIN z units",
+      "calendar": "none, as admitted",
+      "checkpoint_SHA256": [
+        "1cea5dc8d732efa6d6e13880d0311bc286d20fe0623577dcae0340048c076d36",
+        "c2b389a3060e3538f43e4390d915a0e3473c4b0a158e1274344de7d95aaf4ed3"
+      ],
+      "origin": 19696,
+      "channel_0_based": 79,
+      "zoom_steps": [
+        54,
+        77
+      ],
+      "status": "ELIGIBLE"
+    },
+    {
+      "dataset": "PEMS03",
+      "backbone": "NLINEAR_PAIRED",
+      "seed": 951,
+      "channels": 358,
+      "history": 336,
+      "horizon": 96,
+      "role": "DEV",
+      "train_rows": [
+        0,
+        15724
+      ],
+      "dev_rows": [
+        15724,
+        20966
+      ],
+      "data_cache_SHA256": "6be80834ecd25b3608f127d5eb53c5604bd874597404b6652712e7544472ea5b",
+      "scale": "accepted full-TRAIN z units",
+      "calendar": "none, as admitted",
+      "checkpoint_SHA256": [
+        "c6fa4e58c35ee1fdb0fbb4712004ad2813385fa41fb1c546c446ae51e8afbf05",
+        "fafd1bf8f44a32646ee661680f9e3d7f55ebca49af40e15292866da5f0bf30cf"
+      ],
+      "origin": 17204,
+      "channel_0_based": 156,
+      "zoom_steps": [
+        30,
+        53
+      ],
+      "status": "ELIGIBLE"
+    }
+  ],
+  "engine_hashes": {
+    "data.py": "95b2cae494a59a25c985c99f96d6b46973364c6bf9c5d48e785560071aed480d",
+    "backbones.py": "42533c3c91710d470f30c84f842896de29b4d8494545bae4f11a2fe7ff41760e",
+    "models.py": "4ba819ad650269fa7eb6c6f394dad691a99dbe0b9610c7295c1cf9c6961d8322",
+    "adapters.py": "20504bbf1e6497a48cfe72543f867dc694f7f183e1925bc08a28623a5a2373f7",
+    "efficiency.py": "abb454ac411c1ce234f4712a5794b05f543e1c3fc8b2ac6d18d785274e587d4f"
+  },
+  "accepted_engine_sha256": "202ca013e1878b7e38ca355c216258413c62b3bd9e56a35f9fb6ba4b4b798eb5",
+  "trace_SHA256": "46d8637434261449e0593fd96b2ec68f1ed9bca961d3ff7b00eebed4ba542e5b"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS_FOUR_CORE_LAYERS_AND_TEST",
+  "model_records": 40,
+  "DEV_system_units": 40,
+  "complete_DEV_channel_origin_seed_count": 13285015,
+  "selected_cases": 4,
+  "selected_case_seed_pairs": 20,
+  "branch_reconstruction_max": 0.0,
+  "DLinear_TEST_system_units": 40,
+  "scope_sha256": "e32d0b05b4e7212f3699b2a19b41d43a895853a017f9ec85e3744f7e7d6eaac6",
+  "trajectory_sha256": "fa9767cb3db0c2f1f4c13bd6955235d8ddfa221df43ea9ae1b8fff175c631e28",
+  "statistics_unit": "five seeds; channel-origin fractions are descriptive, overlapping windows are not independent repeats"
+}

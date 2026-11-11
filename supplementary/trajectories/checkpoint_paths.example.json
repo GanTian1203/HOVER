@@ -1,0 +1,30 @@
+{
+  "external_root": "external_models",
+  "posty_root": "external_models/Adapter",
+  "figure6": {
+    "ECL": {
+      "base": "checkpoints/ecl_olinear_base.pt",
+      "hover": "checkpoints/ecl_olinear_hover.pt",
+      "q_history": "checkpoints/ecl_olinear_history.npy",
+      "q_future": "checkpoints/ecl_olinear_future.npy"
+    },
+    "PEMS03": {
+      "base": "checkpoints/pems03_paired_nlinear_base.pt",
+      "hover": "checkpoints/pems03_paired_nlinear_hover.pt"
+    }
+  },
+  "figure7": {
+    "ECL": {
+      "base": "checkpoints/ecl_dlinear_base.pt",
+      "simple": "checkpoints/ecl_dlinear_simple.pt",
+      "hover": "checkpoints/ecl_dlinear_hover.pt",
+      "posty": "checkpoints/ecl_dlinear_posty.pt"
+    },
+    "PEMS03": {
+      "base": "checkpoints/pems03_dlinear_base.pt",
+      "simple": "checkpoints/pems03_dlinear_simple.pt",
+      "hover": "checkpoints/pems03_dlinear_hover.pt",
+      "posty": "checkpoints/pems03_dlinear_posty.pt"
+    }
+  }
+}

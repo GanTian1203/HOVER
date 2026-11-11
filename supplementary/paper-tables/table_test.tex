@@ -1,0 +1,23 @@
+\begin{table}[!t]
+\caption{Chronological held-out TEST results. Each entry is the mean over five fixed seeds. Gain is the relative reduction in mean MSE.}
+\label{tab:heldout}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{@{}llrrrrr@{}}
+\toprule
+ & & \multicolumn{3}{c}{MSE} & \multicolumn{2}{c}{MAE} \\
+\cmidrule(lr){3-5}\cmidrule(l){6-7}
+Dataset & Backbone & Frozen & HOVER & Gain & Frozen & HOVER \\
+\midrule
+ECL & OLinear & 0.12638 & 0.12580 & +0.46\% & 0.21648 & 0.21633 \\
+ & NLinear & 0.14037 & 0.13211 & +5.89\% & 0.23559 & 0.22656 \\
+Solar & OLinear & 0.18259 & 0.18164 & +0.52\% & 0.20869 & 0.21281 \\
+ & NLinear & 0.22749 & 0.19178 & +15.70\% & 0.25734 & 0.23391 \\
+PEMS03 & OLinear & 0.10328 & 0.10285 & +0.42\% & 0.20360 & 0.20278 \\
+ & NLinear & 0.18877 & 0.13561 & +28.16\% & 0.26948 & 0.23154 \\
+Exchange & OLinear & 0.08770 & 0.08775 & -0.05\% & 0.20695 & 0.20745 \\
+ & NLinear & 0.08619 & 0.08645 & -0.31\% & 0.20358 & 0.20410 \\
+\bottomrule
+\end{tabular}
+\end{table}

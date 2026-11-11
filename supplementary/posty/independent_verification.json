@@ -1,0 +1,19 @@
+{
+  "status": "PASS_FORMAL_DEV_10_PAIRS",
+  "formal_delta_fits": 10,
+  "system_evaluations": 30,
+  "role": "DEV",
+  "TEST_access": false,
+  "upstream_commit": "0add06ea7b4d2e0a84c364a8be72eef2676a92f2",
+  "protocol_lock_SHA256": "74e32003c26d46419b2b7bc281e7d3638baa034aae30e0b0161f8517f2c2b984",
+  "seed_csv_SHA256": "09ba3096619b06076ea9eb4c7120514cc2a085564e5735c991116721f11879d7",
+  "summary_SHA256": "25b7fa2e66f1fcac687cdb2862f591ce5ea5984677be488494f2d0af9747833a",
+  "checks": [
+    "exact checkpoints",
+    "exact DEV origins and counts",
+    "SSE/SAE recomputation",
+    "DEV early stopping selection",
+    "paired differences",
+    "five-seed mean and sample SD"
+  ]
+}

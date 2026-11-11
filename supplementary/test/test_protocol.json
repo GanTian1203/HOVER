@@ -1,0 +1,278 @@
+{
+  "role": "TEST",
+  "L": 336,
+  "H": 96,
+  "batch": 32,
+  "datasets": {
+    "ECL": {
+      "train_rows": [
+        0,
+        18412
+      ],
+      "dev_rows": [
+        18412,
+        21044
+      ],
+      "test_rows": [
+        21044,
+        26304
+      ],
+      "channels": 321,
+      "source_url": "https://raw.githubusercontent.com/laiguokun/multivariate-time-series-data/7f402f185cc2435b5e66aed13a3b560ed142e023/electricity/electricity.txt.gz",
+      "format": "gzip_csv",
+      "calendar": "NONE",
+      "windows": 5165,
+      "effective_elements": 159164640,
+      "raw_sha256": "3c4c069588198c1fcc95cace7bb69c99922129edfd673b7286661dad20badefa",
+      "scaler_sha256": "69e971c49535ef71b20abde518f72c2cb7f5474ba9239e4e6ef1cb2b5fa4b3bf",
+      "train_cache_sha256": "0442213c8f2d737b7a64dc4deb89b995553fea09ac5be082a0365cd404a486d3",
+      "q_sha256": {
+        "history": "b8a4209ff48e10b8b9373c2099a84fe46324bdf1d1a6a6f5fa382c288d77f1fa",
+        "future": "07bb68cb86824d67ad4a162ee36d00230168346b69f9fb579644c1255490516a"
+      }
+    },
+    "Solar": {
+      "train_rows": [
+        0,
+        36792
+      ],
+      "dev_rows": [
+        36792,
+        42048
+      ],
+      "test_rows": [
+        42048,
+        52560
+      ],
+      "channels": 137,
+      "source_url": "https://raw.githubusercontent.com/laiguokun/multivariate-time-series-data/7f402f185cc2435b5e66aed13a3b560ed142e023/solar-energy/solar_AL.txt.gz",
+      "format": "gzip_csv",
+      "calendar": "NONE",
+      "windows": 10417,
+      "effective_elements": 137004384,
+      "raw_sha256": "1ae9329c3e1032acbb8dd080bfc397c44507006812a715d2788f172820489a1c",
+      "scaler_sha256": "f36c972d156584bd245ed7136dc148a14eae6ee01d226637c9db130f56b124f4",
+      "train_cache_sha256": "1582594dd46fc33458a20319e3eea52eaff50d962d4398a266958fb39df6bb39",
+      "q_sha256": {
+        "history": "eafb2cda5e58ec1f189658beaf389802c47576b56d10f8f464346b8a1d60ae2d",
+        "future": "d133505fcfb714d5377a6c3e4c8f555b707538e341ed2128ccb6108722dc8010"
+      }
+    },
+    "PEMS03": {
+      "train_rows": [
+        0,
+        15724
+      ],
+      "dev_rows": [
+        15724,
+        20966
+      ],
+      "test_rows": [
+        20966,
+        26208
+      ],
+      "channels": 358,
+      "source_url": "https://raw.githubusercontent.com/guoshnBJTU/ASTGNN/9c2e19b98c4cedf1f35214d8789685b6381b3aad/data/PEMS03/PEMS03.npz",
+      "format": "pems_npz",
+      "calendar": "NONE",
+      "windows": 5147,
+      "effective_elements": 176892096,
+      "raw_sha256": "34859517425eded66a0014db63de54b95d0428c38890741a1710ed4d3b043de8",
+      "scaler_sha256": "2cf78075586cfb1b89231ed250d76fc1e29fc6f670ff51a313876c15e540ce11",
+      "train_cache_sha256": "6be80834ecd25b3608f127d5eb53c5604bd874597404b6652712e7544472ea5b",
+      "q_sha256": {
+        "history": "6ab9c629709a296d8b6aebe828b8f60dc845dd72fd790d43958a1235c2a4a6f2",
+        "future": "60937524902a58ad9ec7746b2a069949a3939c881e9c43e7c33566d1307337d6"
+      }
+    },
+    "Exchange": {
+      "train_rows": [
+        0,
+        5311
+      ],
+      "dev_rows": [
+        5311,
+        6071
+      ],
+      "test_rows": [
+        6071,
+        7588
+      ],
+      "channels": 8,
+      "source_url": "https://raw.githubusercontent.com/laiguokun/multivariate-time-series-data/7f402f185cc2435b5e66aed13a3b560ed142e023/exchange_rate/exchange_rate.txt.gz",
+      "format": "gzip_csv",
+      "calendar": "NONE",
+      "windows": 1422,
+      "effective_elements": 1092096,
+      "raw_sha256": "6a4fbb561dcdee43f071a83badbeec9223a335552278348656738b556f1c2e9d",
+      "scaler_sha256": "1bc57f23a2c7a24af8973e15b2dbe133203e0ae580e2a733201437904855c99f",
+      "train_cache_sha256": "23b38ea8abcdba4f3bade5c061f707cd441090dae596d6fb07def41a3b6fcb2d",
+      "q_sha256": {
+        "history": "6731d5f6f3578531aae4601be9d40d2b456a11f9ac6c9fbf32c01dd4b8d1aad8",
+        "future": "24e04d9708b8f83e664f8763bdfb02cd6b8426bed9bce6c6a12ea7811eae2877"
+      }
+    }
+  },
+  "pairs": {
+    "ECL/OLINEAR/951": {
+      "base_sha256": "1cea5dc8d732efa6d6e13880d0311bc286d20fe0623577dcae0340048c076d36",
+      "hover_sha256": "c2b389a3060e3538f43e4390d915a0e3473c4b0a158e1274344de7d95aaf4ed3"
+    },
+    "ECL/OLINEAR/952": {
+      "base_sha256": "e2e6bf10533a0d0cbdb27dac6846b5396968cc1a09adb4f410387291eb4c44b2",
+      "hover_sha256": "01f1cd8b61a9c7cd2217b70fa87f0c9d78550028a899e6498ac4f4dc87c0dec6"
+    },
+    "ECL/OLINEAR/953": {
+      "base_sha256": "8ab7dacb4f1c58a6fb161f62d0d3c8de28f0db729c9bf745e2fa86ab4c2683ef",
+      "hover_sha256": "279d2adf6472f8f9c7790933bb808e4334c6a830ece2498dd6492e6610b6a1f2"
+    },
+    "ECL/OLINEAR/954": {
+      "base_sha256": "e1d9d37a64497e2fe80a474eca3207171ba4cc38771c99d975fc37c323f62047",
+      "hover_sha256": "906402b2010d52890cd0f655aa23581d010d63ab980f5421fa0d74fd3507d59a"
+    },
+    "ECL/OLINEAR/955": {
+      "base_sha256": "e7ed942d413a0330fe3acfc076afa005eff9f71c0e4f3944f6b4b2834b5eeebf",
+      "hover_sha256": "6a7e3f5a0afe2232eca2c850c0e71c95dc12fa1622a322d4af2327def4437b81"
+    },
+    "ECL/NLINEAR_PAIRED/951": {
+      "base_sha256": "840ad39189b90196fd1b651fbfcd4acd85bda4d40b50982755b51b0dfca4d21d",
+      "hover_sha256": "faf740d07d8d74630f7dc46baab95c8d9cc81cd2b68417611a92a3453be20764"
+    },
+    "ECL/NLINEAR_PAIRED/952": {
+      "base_sha256": "b7ee51af37b8966efaf56d340bac4fcef626ee87c546734e5232e48a9ce2a1b8",
+      "hover_sha256": "b059bd4bb0492bec28993bd21c4ba20ff7c633b67dcadd35151700accaf372d0"
+    },
+    "ECL/NLINEAR_PAIRED/953": {
+      "base_sha256": "dd2a42ec589fc83c7626bfd92cdbd75ecfc06e0140cf482da70f396ab0ba3728",
+      "hover_sha256": "0a0da04716852283fa8d2cef4a9b21ea86250f626d29315f7d924ec5d01a5a53"
+    },
+    "ECL/NLINEAR_PAIRED/954": {
+      "base_sha256": "b7163e3f589fb8915ffb7781b3d2a3c811382031812d3b5d026afafe7b331775",
+      "hover_sha256": "fd5a4e573445595bd00c54062b6789fbd1f877a785d751081ec1126afe9eec0f"
+    },
+    "ECL/NLINEAR_PAIRED/955": {
+      "base_sha256": "4a80b360b5864f715dfd16838ba264342e77995a1a39fe884f9d8983776c4948",
+      "hover_sha256": "87cb63eb567eeb89efb904644e0ea4d8822a103c7dae1cb9c610f3fc54b4355f"
+    },
+    "Solar/OLINEAR/951": {
+      "base_sha256": "21b7bd8691369f6e57d9b0ecdfb82e593be0b8494b90053eec236c073b60a5b1",
+      "hover_sha256": "37600f03ce99d28e478b50959e6d79243628ff2c10c30eb380b870899c07bdb6"
+    },
+    "Solar/OLINEAR/952": {
+      "base_sha256": "4bb49804173506555aabf7da9c1de078a28a773b330216bbd45a8af490907162",
+      "hover_sha256": "5ee28f6d0e7858f5a6987e71e650712e0706f22eb3f1d4689679edd3b06fd61c"
+    },
+    "Solar/OLINEAR/953": {
+      "base_sha256": "1e1bd9bfcfd627428c3184571383406744d2d1931b7b44b0bcad54aa49df3903",
+      "hover_sha256": "827d5a1dddd69be6dad33acd055c47d416e67096128b2741cea878dde0c0cf5e"
+    },
+    "Solar/OLINEAR/954": {
+      "base_sha256": "4118f159fa7f3f16a376a19ef2dbbc3df502f5615b125c97bb3f8fe04e785d4c",
+      "hover_sha256": "f695daaa8d27497686a8ca8f1b35f0f560ef1f2cbe447a13e304c5831962d0cd"
+    },
+    "Solar/OLINEAR/955": {
+      "base_sha256": "d44ddb9269af4d273d83e089f3476d3659100b90b4a02237d9286fe5276df2c4",
+      "hover_sha256": "3cd5783332b40a3008e6e71cc8b058936a1b8692cacf195124953b4430360b24"
+    },
+    "Solar/NLINEAR_PAIRED/951": {
+      "base_sha256": "3f687160e0599e984cc5e7ea7272d112bc7da4df5f0295a1db1f9c39189f0d42",
+      "hover_sha256": "b4738b87e738f8f178a25075a2c1eaf09000f1672524544202595857811793f7"
+    },
+    "Solar/NLINEAR_PAIRED/952": {
+      "base_sha256": "a9bf824e974f34018203288e8f524ea25abbaebb30306cc486b30ff90f5ebb1d",
+      "hover_sha256": "1160048a98c5634ddc249f3c700c47f0d7493f11d3f1619b265c5aae5f15cbaa"
+    },
+    "Solar/NLINEAR_PAIRED/953": {
+      "base_sha256": "8d6d1fa2c061421e2e636a8f82a97ec94037997bdc00d231d1ff69f17a5bca37",
+      "hover_sha256": "a75329b005e5c496c4ab0e0bc19cbdd2ebbe9bbb7daa0c0f9bd0d1dcce7dd1e5"
+    },
+    "Solar/NLINEAR_PAIRED/954": {
+      "base_sha256": "b0ab3a781845de63ce7f332f9e056f5faccce4e16b63c67b874426ea1d091bd8",
+      "hover_sha256": "580bc0a77b487cc90ab8a433ce9dfa6f14420e165266fcd8b3239a05c4be8edc"
+    },
+    "Solar/NLINEAR_PAIRED/955": {
+      "base_sha256": "c3698651ec01a9f151265a64facf5647b285a72fb100aa3d8b4c7875475a0262",
+      "hover_sha256": "bb4c93c3fe6e4799b2f88f50f4d0d0ccd304ed4b69c42dce09850e3d985de83f"
+    },
+    "PEMS03/OLINEAR/951": {
+      "base_sha256": "cf96f6a005a82a0feed250c7aefca79cca190922980cd39041354e034cdd295c",
+      "hover_sha256": "309ce0baaa7b90a82204a78bf00b5904d904ce6131b1ec270e0709b7273e8ad8"
+    },
+    "PEMS03/OLINEAR/952": {
+      "base_sha256": "ad81f017d74eb65605355dfa64ae155505d2900e404bc02a8320059b63170ab6",
+      "hover_sha256": "2241053743276a70e23369b429838ff9bd1e7d9bb3ef6349a2a9606d2aaf53ab"
+    },
+    "PEMS03/OLINEAR/953": {
+      "base_sha256": "7cbe388645943032ba95889aec44307168d2f3cb8ed2f3726a1ecb096bd98f9b",
+      "hover_sha256": "131a9a6173361c89d50ab34e29d9acaf65c49c27fbc5ff625d37d12c2ec3a527"
+    },
+    "PEMS03/OLINEAR/954": {
+      "base_sha256": "dc7dbf505d13cee31f73d19327e19cbb958eb371de09850b2309c3a479168564",
+      "hover_sha256": "bee90d2b504225a289e6d35fc2910014109ba63a86bf089a1c041f7817f0869f"
+    },
+    "PEMS03/OLINEAR/955": {
+      "base_sha256": "c6a9fdebafc66f9800aa034ee387dc17b50ab6d0248a63ff0550c4fdafd9c400",
+      "hover_sha256": "51c5556b82f17e76d52515f284d6aea8ad78e945f1a31d44bad379fb1a40ba08"
+    },
+    "PEMS03/NLINEAR_PAIRED/951": {
+      "base_sha256": "c6fa4e58c35ee1fdb0fbb4712004ad2813385fa41fb1c546c446ae51e8afbf05",
+      "hover_sha256": "fafd1bf8f44a32646ee661680f9e3d7f55ebca49af40e15292866da5f0bf30cf"
+    },
+    "PEMS03/NLINEAR_PAIRED/952": {
+      "base_sha256": "711ad49319ba0104f0ce563996a374e158038972a0b2cf6b01616b2af752aa43",
+      "hover_sha256": "967b0c3ba8c7decbc982468de7c892c3a6266f3f2485fdc29eaf4aed67352e02"
+    },
+    "PEMS03/NLINEAR_PAIRED/953": {
+      "base_sha256": "e3420ba09ed64ac491d4fe244109fb3da3900c1048df6febc9611c3df2d23889",
+      "hover_sha256": "06d1aa57c8ed2569f5a0218b73c002aee695ccfc49e120e1b09eef0a78301b8a"
+    },
+    "PEMS03/NLINEAR_PAIRED/954": {
+      "base_sha256": "b2c70e89f4d72dd54fd16819252d57473012e94bccdcd2a535929933f0d423aa",
+      "hover_sha256": "32168a0a232be03c6d141f22baeec7dfcc22e17725d7ec239ef2cdaef8a1acff"
+    },
+    "PEMS03/NLINEAR_PAIRED/955": {
+      "base_sha256": "8a6d3dba8092c282b0780ea0d12c8e01e6000d88834a7d93f5ff023f04c8c96b",
+      "hover_sha256": "2b04598786665f5f1cfe5b001144330f0dbd8cb03db6a654d5a532bd17dcc19c"
+    },
+    "Exchange/OLINEAR/951": {
+      "base_sha256": "5315f1701e8a69e177b0e2b966b4d5d6691496c8f3ac07d96700c09d7719bd12",
+      "hover_sha256": "cdee55346e7768873e479651f57a101af01ed1fe1145f4ec5a984f9e61a9fab1"
+    },
+    "Exchange/OLINEAR/952": {
+      "base_sha256": "27da80ea02a9ff218e54a623cd26774939341fbcdf6c3ffb10024cd186440768",
+      "hover_sha256": "1c2cf109a5a91fe0a86355fc5c5812e423dafca5619d6c4c3e9b488127b0ff7d"
+    },
+    "Exchange/OLINEAR/953": {
+      "base_sha256": "d9d078e80679d9033da2293ce48fccdbe3e14728ebfdc05f27ee1b116d9ed52a",
+      "hover_sha256": "989ccde66725326055c1f30a661a433e384e2378c20beeb2cc0f52bb937cad75"
+    },
+    "Exchange/OLINEAR/954": {
+      "base_sha256": "ec530f940940a4949ac793226d508c133853cb266bb2e766c7ef7111f0b334af",
+      "hover_sha256": "5bd4e479404b997de2a5acc5313784fdb51eb6acd508b500a38661bfd10a8ae8"
+    },
+    "Exchange/OLINEAR/955": {
+      "base_sha256": "18df8994e7393a186b612fffc61be31a9199676b5032a5b0b95334fdb9847f6a",
+      "hover_sha256": "791cfece83f34bc82531a19b51d5738c7d6c71b19650dc98dea63a9b18b893c0"
+    },
+    "Exchange/NLINEAR_PAIRED/951": {
+      "base_sha256": "198ac26de1b80fbed691a0f5d1780576caefe00da8945102cc4320fde78bc9d1",
+      "hover_sha256": "ab309080aebb99be733ff9f45154a3c27c9d5350394326830f3eb17cfb5400b5"
+    },
+    "Exchange/NLINEAR_PAIRED/952": {
+      "base_sha256": "df0e2b598beb1f654a30c722ccda844b13e62904228330d4fcbe80305b87e300",
+      "hover_sha256": "e6f7ba03c710711515389eca2b2756776e147ffdf8c23f0a11616fd0a5f68831"
+    },
+    "Exchange/NLINEAR_PAIRED/953": {
+      "base_sha256": "59666c20dd5992d2ccc1ba07a481a69589a8cebade0762e2fabbbc968fdd1912",
+      "hover_sha256": "404d147439fe4adaa2316ded126a3d89e0f724fc49201d11bac422447d5c386a"
+    },
+    "Exchange/NLINEAR_PAIRED/954": {
+      "base_sha256": "19cbedaae29e3804118fbd793839e4a0e3a4a7fa7ecc767eadf206e5ee4afcef",
+      "hover_sha256": "fe336e8cd58aad4b4e452514e0b81bd7484867bb488d54bb3b94077bd992ddf5"
+    },
+    "Exchange/NLINEAR_PAIRED/955": {
+      "base_sha256": "77436b35e5ae2023b1c1ee903d953a99ce2b98f2e342362b0ca9dbf30a347003",
+      "hover_sha256": "2c9d8837107840d8afe0c6fb278fa81b6027e03342ba909a53765c04e1a3a7bc"
+    }
+  }
+}

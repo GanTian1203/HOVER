@@ -1,117 +1,114 @@
 # HOVER
 
-HOVER is a residual adapter for frozen multivariate time-series forecasters.
-A shared history encoder feeds a history residual path (HRP) and a
-forecast-conditioned refinement path (FCRP). The two paths predict corrections
-in history-normalized coordinates and add them to the backbone forecast after
-rescaling. Zero-initialized residual heads start training from the frozen forecast.
+**History- and Output-Conditioned Variable-Shared Error Refinement for Frozen Time-Series Forecasters**
 
-## Installation
+Tian Gan, Junshou Li, Shiming Fan, and Fan Zhang (corresponding author)
+Shandong Technology and Business University, China
 
-Use Python 3.8.20 for the recorded environment. Create a virtual environment
-with `python -m venv .venv`, then activate it with
-`.venv\Scripts\Activate.ps1` in PowerShell or `source .venv/bin/activate` on Linux.
+[Manuscript](paper/HOVER.pdf) · [Supplementary materials](supplementary/README.md) · [Paper results and reproduction](PAPER_RESULTS_INDEX.md)
+
+## Abstract
+
+Trained multivariate forecasters are often reused as existing prediction components. Organizing recent history and a model's own forecast trajectory to learn instance-specific residual corrections is a modeling challenge when reusing these predictive capabilities. We propose History- and Output-Conditioned Variable-Shared Error Refinement (HOVER), which learns direct historical and forecast-conditioned residuals from a shared historical representation. The latter represents the base forecast trajectory relative to the latest observation and modulates historical features through a low-dimensional multiplicative interaction. Both residuals are restored to the local scale and added to the frozen forecast, with parameters shared across variables. Matched-backbone and multi-horizon DEV experiments show that refinement reduces mean MSE in the evaluated settings. Capacity-matched and structural controls support the two-path organization, while prespecified independent held-out tests further reveal that the gains vary by task. The results suggest that structuring history and existing forecasts together offers a viable approach to error refinement while preserving the original prediction interface.
+
+## Method
+
+A shared encoder represents observed history for each variable. The history residual path (HRP) predicts a correction directly from this representation. The forecast-conditioned refinement path (FCRP) combines history features with the base trajectory relative to the last observation. Both paths share parameters across variables. Their residuals are rescaled and added to the frozen forecast.
+
+![HOVER architecture and residual paths](assets/figure2.png)
+
+Figure 2 shows the frozen forecaster, shared encoder, and two residual paths. See Section III of the [manuscript](paper/HOVER.pdf).
+
+## Results
+
+| Evaluation | Result |
+| --- | --- |
+| Table I · DEV · 12 datasets | OLinear + HOVER and paired NLinear + HOVER lead 15 and 3 of the 24 dataset–metric cells, respectively. |
+| Table II · DEV · matched checkpoints | Mean MSE falls in all 15 evaluated backbone–dataset pairs. |
+| Tables III–IV · DEV · structural controls | HOVER lowers mean MSE relative to Simple in five of six capacity-matched comparisons. Full HOVER has lower mean MSE than Only HRP in eleven of twelve tasks. History-surrogate outcomes vary by task and metric. |
+| Table V · DEV · forecast horizons | Mean MSE falls in all 16 OLinear dataset–horizon settings. |
+| Table VI · held-out TEST | Mean MSE falls in six of eight preselected OLinear and paired NLinear comparisons, with gains for both backbones on ECL, Solar, and PEMS03 and small increases on Exchange. |
+| PostY · DEV · DLinear | HOVER lowers mean MSE relative to offline multiplicative PostY by 4.63% on ECL and 30.86% on PEMS03. |
+
+![Four forecasts on matched DLinear DEV windows](assets/figure7.png)
+
+Figure 7 shows selected DEV windows at seed 951. Each panel uses the same channel and origin for all four forecasts. Panel scores describe those windows. [Rebuild Figures 6 and 7](supplementary/trajectories/README.md)
+
+## Quick start
+
+Use Python 3.8.20 for the recorded environment and activate a fresh virtual environment.
 
 ```bash
 python -m pip install -r requirements-cpu.txt
 python -m pip install -e .
-```
-
-See the [environment guide](docs/ENVIRONMENTS.md) for the CUDA dependencies and
-the environments used for validation.
-
-## Quick start
-
-```bash
 python -m hover demo --output outputs/demo.json
 ```
 
-The demo uses synthetic inputs and runs on CPU without an external backbone or
-dataset. To inspect a single paper run, use the experiment commands below.
+The CPU demo uses synthetic inputs. The [environment guide](docs/ENVIRONMENTS.md), [data acquisition](docs/DATA_ACQUISITION.md), and [external model guide](docs/EXTERNAL_MODEL_GUIDE.md) cover the paper setup.
 
-## Prepare models and data
+## CPU tests
 
-All eight forecasting backbones are external. The [model registry](docs/EXTERNAL_MODEL_REGISTRY.md)
-lists each paper, official repository, pinned commit, source hashes, and license.
-For example, obtain and verify the shared NLinear/DLinear source tree with
+The base suite requires the Python dependencies from Quick start. It uses synthetic inputs and bundled reference records.
 
 ```bash
-python -m hover sources --model NLINEAR --output external_models
-python -m hover sources --model NLINEAR --output external_models --verify
+python -m unittest discover -s tests -p "test_science.py" -v
+python supplementary/verify_scores.py
 ```
 
-Use the [backbone guide](docs/EXTERNAL_MODEL_GUIDE.md) for the other models and
-local registration. OLinear requires a separately obtained pinned source tree
-and a documented basis for your use. The loader checks the source identity.
+The optional integration suite requires the pinned LTSF-Linear and FITS
+source trees in the default external directory or in the directory specified
+by the HOVER_EXTERNAL_ROOT environment variable. Missing trees yield explicit
+skips. Present trees must pass the pinned file identity checks. See the
+[external model guide](docs/EXTERNAL_MODEL_GUIDE.md) for acquisition and registration.
 
 ```bash
-python -m hover download --dataset ETTm1 --output data/raw/ETTm1.prefix.csv
-python -m hover prepare --dataset ETTm1 --source data/raw/ETTm1.prefix.csv --output data/prepared/ETTm1.npz
+python -m unittest discover -s tests -p "test_external.py" -v
 ```
 
-The download command retrieves a verified TRAIN/DEV prefix for ETTm1. Use
-authorized local prefixes for datasets without a verified download boundary.
-See [data acquisition](docs/DATA_ACQUISITION.md) and the
-[data protocol](docs/DATA_PROTOCOL.md) for sources, splits, and scaling.
+## Reproduce the paper
 
-## Reproduce the experiments
-
-| Stage | Experiment |
+| Paper item | Entry point |
 | --- | --- |
-| `A` | Ten forecasting systems on 12 tasks |
-| `Table2` | Frozen, Simple, and HOVER on five backbones and three datasets |
-| `B` | Four mechanism controls on 12 tasks, paired with full HOVER |
-| `C` | Frozen OLinear, Simple, and HOVER across 16 dataset–horizon combinations |
+| Table I · complete systems | `python -m hover run --stage A` |
+| Tables II–III · matched backbones and capacity | `python -m hover run --stage Table2` |
+| Table IV · structural controls | `python -m hover run --stage B` |
+| Table V · horizons | `python -m hover run --stage C` |
+| Table VI and PostY | [Evaluation records and protocols](supplementary/README.md) |
 
-The formal runs use seeds 951–955. Strong NLinear in the main table and the
-paired NLinear used for HOVER and its controls have separate training recipes.
-Each horizon uses a matching output head and frozen checkpoint. The
-[experiment guide](docs/PAPER_CODE_RESULTS_MAP.md) links the recipes and results.
-
-The commands below print run plans.
-
-```bash
-python -m hover run --stage A --dataset ETTm1 --system NLINEAR_HOVER --seed 951
-python -m hover run --stage B --dataset ETTm1 --system history_only --seed 951
-python -m hover run --stage C --dataset ETTm1 --horizon 192 --system HOVER --seed 951
-python -m hover run --stage Table2 --dataset ECL --system DLINEAR+HOVER --seed 951
-```
-
-Use `python -m hover run --stage A` without filters for the full matrix, and
-substitute `B`, `C`, or `Table2` for the other matrices. To run training, provide
-prepared data, the required external source trees, a device, and an output directory.
+The commands in the table print a plan and return PLAN_ONLY. They enumerate
+the requested records without fitting models. Add the execution flag to run the
+resolved tasks with the pinned sources and prepared data. The following
+single-record CUDA command was exercised in the documented ETTm1 seed-951
+verification. Paths are relative to the repository root.
 
 ```bash
-python -m hover run --stage A --dataset ETTm1 --system NLINEAR_HOVER --seed 951 --execute --data-root data/prepared --external-root external_models --device cuda:0 --output outputs/reproduction
+python -m hover run --stage A --dataset ETTm1 --horizon 96 --system NLINEAR_HOVER --seed 951 --data-root data/prepared --output outputs/reproduction --external-root external_models --device cuda:0 --threads 1 --execute
 ```
 
-Use a fresh output directory when switching source snapshots. Resume checks
-include source file hashes, which also change when comments are edited.
+Use the prepared ETTm1 TRAIN/DEV cache, the pinned LTSF source tree, and the
+CUDA environment described in the [environment guide](docs/ENVIRONMENTS.md).
+The [single-seed verification record](manifests/GPU_single_seed_independent_acceptance.json)
+states the tested scope. The [paper index](PAPER_RESULTS_INDEX.md) links
+the figures and tables to their reference evidence.
 
-## Results
+[Rebuild Figures 6 and 7](supplementary/trajectories/README.md) from upstream
+data and published forecasts, or rerun the six selected DEV windows with the
+original reference checkpoints and pinned external sources. The bundle provides
+checkpoint hashes. Acquire the checkpoint and Q files separately for inference.
+The PostY training recipe and the complete DLinear TEST records are provided as
+reference evidence. Standalone PostY training and full DLinear TEST evaluation
+remain outside the released runner.
 
-All reference metrics are from the development split (DEV). The repository
-includes [per-seed results](results/reference), [paper tables](results/tables),
-and data for [Figure 1(d)](results/figure1d) and the
-[horizon plots](results/horizon_final). The main cross-backbone and horizon
-views compare Frozen and HOVER. The archived Simple arms support capacity controls.
+## Citation and license
 
-```bash
-python -m hover.paper_tables --output outputs/paper_tables
-python -m hover.presentation --panel Table2 --export-records outputs/Table2_main.json
-python -m hover.presentation --panel C --export-records outputs/C_main.json
-python -m hover summarize --records outputs/reproduction/records --stage A --output outputs/new_table
-python -m hover plot --table outputs/paper_tables/Table1_MSE_MAE_mean_SD.csv --dataset ECL --output outputs/ECL.png
+Please cite the manuscript when using HOVER or link to this repository. [Software citation](CITATION.cff)
+
+```bibtex
+@unpublished{gan2026hover,
+  title = {HOVER: History- and Output-Conditioned Variable-Shared Error Refinement for Frozen Time-Series Forecasters},
+  author = {Gan, Tian and Li, Junshou and Fan, Shiming and Zhang, Fan},
+  note = {Manuscript}
+}
 ```
 
-For the CPU regression suite, register NLinear and FITS first, then run
-`python -B tests/test_science.py`. See the
-[verification notes](docs/VERIFICATION_STATUS.md) for the scope of CPU and GPU checks.
-
-## Citation and licensing
-
-**Citation requested for academic and commercial use.** If you use or adapt HOVER in an academic publication, please cite the HOVER paper once its bibliographic details are available, or include the project URL: https://github.com/GanTian1203/HOVER. For commercial use, we similarly request an acknowledgment of HOVER with the paper citation or this repository link in product documentation, technical reports, or other appropriate accompanying materials.
-
-Until the paper's final citation is available, cite this software using [CITATION.cff](CITATION.cff) or provide the repository URL. The paper citation and repository-link request expresses scholarly attribution expectations; **it is not an additional legal requirement of the MIT License**.
-
-The author-owned HOVER source code is provided under the [MIT License](LICENSE), Copyright (c) 2026 GanTian1203. When distributing copies or substantial portions, retain the copyright and permission notice required by MIT. Third-party backbone source code is not distributed here and remains subject to its original terms. See the [third-party notices](THIRD_PARTY_NOTICES.md) and [license scope](docs/LICENSE_REVIEW.md).
+HOVER's own code is available under the [MIT License](LICENSE). External forecasters and PostY are obtained separately under their applicable terms. [External model registry](docs/EXTERNAL_MODEL_REGISTRY.md) · [Third-party notices](THIRD_PARTY_NOTICES.md)
