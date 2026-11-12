@@ -5,6 +5,10 @@
 Tian Gan, Junshou Li, Shiming Fan, and Fan Zhang (corresponding author)
 Shandong Technology and Business University, China
 
+## Research Status — November 11, 2026
+
+This manuscript was submitted to the IEEE International Conference on Data Engineering (ICDE 2027), Regular Research Track (Round 2), on November 11, 2026. The HOVER source code, experimental results, and supplementary materials were publicly released on November 11, 2026. Submission does not imply conference acceptance or endorsement.
+
 [Manuscript](paper/HOVER.pdf) · [Supplementary materials](supplementary/README.md) · [Paper results and reproduction](PAPER_RESULTS_INDEX.md)
 
 ## Abstract
